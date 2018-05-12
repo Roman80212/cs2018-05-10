@@ -146,6 +146,7 @@ public class Testing02 {
     //    }
     private String className;
     Class<?> aClass;
+
     //Основной конструктор тестов
     private Testing02(String className, String in) {
         //this.className = className;
