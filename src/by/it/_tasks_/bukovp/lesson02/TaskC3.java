@@ -33,15 +33,15 @@ import java.util.Scanner;
 */
 class TaskC3 {
     public static void main(String[] args) {
-        int weight;
         Scanner sc = new Scanner(System.in);
-        weight = sc.nextInt();
-        public static double getWeight(int w){
-            double speed1 = 9.81;
-            double speed2 = 3.86;
-            double k = speed1/speed2;
-            double res = w*k;
-        }
+        int w = sc.nextInt();
+            public static double getWeight(int weight) {
+                double speed1 = 9.81;
+                double speed2 = 3.86;
+                double k = speed1/speed2;
+                double res = weight*k;
+                
+            }
         }
     }
 
