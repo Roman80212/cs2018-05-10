@@ -16,5 +16,13 @@ Scanner sc=new Scanner(System.in);
 
  */
 
+import java.util.Scanner;
+
 class TaskB1 {
+    public static void main  (String[] args){
+        System.out.println("Введите число 'a'");
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        System.out.println("а*а=" + a*a);
+    }
 }
