@@ -30,5 +30,11 @@ package by.it.lepchenkov.lesson02;
 
 */
 class TaskC3 {
+    static double getWeight (int weight){
+        return 3,86*weight;
+    }
+
+    
+
 
 }
