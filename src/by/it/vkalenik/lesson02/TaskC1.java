@@ -16,6 +16,7 @@ class TaskC1 {
         Scanner sc = new Scanner(System.in);
         int i = sc.nextInt();
         int a = sc.nextInt();
-        System.out.println("sum", "=", i + a);
+        int b = i+a;
+        System.out.println("sum " + "= " + b);
     }
 }
