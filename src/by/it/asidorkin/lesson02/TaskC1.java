@@ -13,7 +13,7 @@ Sum = 26
 */
 class TaskC1 {
 
-    public static void main  (String[] args){
+    public static void main (String[] args){
         System.out.println("Введите число 'a'");
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
