@@ -13,10 +13,9 @@ Sum = 26
 */
 class TaskC1 {
     public static void main(String[] args) {
-Scanner          
+        Scanner sc = new Scanner(System.in);
+        int i = sc.nextInt();
+        int a = sc.nextInt();
+        System.out.println("sum", "=", i + a);
     }
-
-
-
-
 }
