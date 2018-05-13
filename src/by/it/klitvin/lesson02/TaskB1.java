@@ -16,5 +16,14 @@ Scanner sc=new Scanner(System.in);
 
  */
 
+import java.util.Scanner;
+
 class TaskB1 {
+    public static void main(String[] args) {
+        System.out.println("Введите любое число:");
+        Scanner scan = new Scanner(System.in);
+        int a = scan.nextInt();
+        int i = a*a;
+        System.out.println("Квадрат данного числа" + "=" + i);
+    }
 }
