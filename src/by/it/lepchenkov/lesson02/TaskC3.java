@@ -29,12 +29,18 @@ package by.it.lepchenkov.lesson02;
 
 
 */
+import java.util.Scanner;
 class TaskC3 {
-    static double getWeight (int weight){
-        return 3,86*weight;
+    static double getWeight(int weight) {
+        return weight / 9.81 * 3.86;
     }
 
-    
-
-
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        
+        int weightOnEarth;
+        weightOnEarth = sc.nextInt();
+        double result = TaskC3.getWeight(weightOnEarth);
+        System.out.format("%.2f%n", result);
+    }
 }
