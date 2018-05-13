@@ -20,11 +20,9 @@ import java.util.Scanner;
 
 class TaskB1 {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-
-
-
-
-
+        Scanner in = new Scanner(System.in);
+        int a = in.nextInt();
+        int b = a*a;
+        System.out.println(b);
     }
 }
