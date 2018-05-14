@@ -21,7 +21,14 @@ class TaskC2 {
         int i = sc.nextInt();
         int a = sc.nextInt();
         int b = i + a;
-        System.out.println("sum " + "= " + b);
-
+        System.out.println("DEC: " + i + "+" + a + "= " + b);
+//        String b = Integer.toBinaryString(b);
+//        String i = Integer.toBinaryString(i);
+        String binary = Integer.toBinaryString(a);
+        if (binary.length() > 8) binary = binary.substring(binary.length() - 8);
+        binary = String.format("%8s", binary).replace(" ", "0");
+        System.out.printf(binary, "BIN: " + i + "+" + a + "= " + b);
     }
 }
+
+
