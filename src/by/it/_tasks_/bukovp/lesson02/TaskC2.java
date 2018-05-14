@@ -18,7 +18,7 @@ OCT:42+32=74
 class TaskC2 {
     public static void main(String[] args) {
         int num1, num2, sumdec;
-        System.out.println("Вот пример ввода с клавиатуры:: ");
+        System.out.println("Введите два числа с клавиатуры: ");
         Scanner sc1 = new Scanner(System.in);
         num1 = sc1.nextInt();
         Scanner sc2 = new Scanner(System.in);
@@ -28,9 +28,9 @@ class TaskC2 {
         String convertbin2 = Integer.toBinaryString(num2);
         String  convertoct1 = Integer.toOctalString(num1);
         String  convertoct2 = Integer.toOctalString(num2);
-        String  converthex1 = Integer.toHexString(num1).toUpperCase();
-        String  converthex2 = Integer.toHexString(num2).toUpperCase();
-        System.out.println("Тогда вывод ожидается такой:");
+        String  converthex1 = Integer.toHexString(num1);
+        String  converthex2 = Integer.toHexString(num2);
+        System.out.println("Вывод:");
         System.out.println("DEC:" + num1 + "+" + num2 + "=" + sumdec);
         String sumbin = Integer.toBinaryString(sumdec);
         String sumoct = Integer.toOctalString(sumdec);
