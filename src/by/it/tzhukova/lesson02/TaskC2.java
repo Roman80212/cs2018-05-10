@@ -13,7 +13,24 @@ BIN:100010+11010=111100
 HEX:22+1a=3c
 OCT:42+32=74
 */
+
+import java.sql.SQLOutput;
+import java.util.Scanner;
+
 class TaskC2 {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int i = sc.nextInt();
+        int j = sc.nextInt();
+        int k = i + j;
+        System.out.println("DEC:" + i + "+" + j + "=" + k);
+        System.out.printf("%s%x%s%x%s%x%n", "HEX:", i,"+",j,"=",k);
+        System.out.printf("%s%o%s%o%s%o", "OCT:", i,"+",j,"=",k);
+
+
+
+    }
 
 
 }
