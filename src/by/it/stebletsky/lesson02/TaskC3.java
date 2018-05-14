@@ -1,5 +1,7 @@
 package by.it.stebletsky.lesson02;
 
+import java.util.Scanner;
+
 /*
 Ускорение свободного падения на Земле и Марсе таково:
 Марс   3,86
@@ -30,5 +32,16 @@ package by.it.stebletsky.lesson02;
 
 */
 class TaskC3 {
+    public static void main(String[] args) {
+        System.out.println("Ввод:");
+        Scanner in = new Scanner(System.in);
+        int i = in.nextInt();
+        double w = i / 9.81 * 3.86;
+        System.out.println("Вывод:\n" + String.format("%.4g%n", w));
 
-}
+
+        }
+
+    }
+
+
