@@ -32,7 +32,7 @@ import java.util.Scanner;
 
 */
 class TaskC3 {
-    public static void main(String[] args) {
+/*    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int w = sc.nextInt();
             public static double getWeight(int weight) {
@@ -40,8 +40,8 @@ class TaskC3 {
                 double speed2 = 3.86;
                 double k = speed1/speed2;
                 double res = weight*k;
-                
+                return res;
             }
-        }
+        } */
     }
 
