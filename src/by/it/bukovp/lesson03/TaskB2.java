@@ -31,7 +31,7 @@ Lesson 03. Task B2. Нужно написать программу, котора
 */
 class TaskB2 {
     public static void main(String[] args) {
-        int diskr;
+        double diskr;
         Scanner scan = new Scanner(System.in);
         System.out.println("Ввод: ");
         int a = scan.nextInt();
@@ -40,8 +40,8 @@ class TaskB2 {
         diskr = b*b -4*a*c;
         if (diskr > 0) {
             System.out.println("Вывод:");
-            double k1 = -b + Math.sqrt(diskr) / (2*a);
-            double k2 = -b - Math.sqrt(diskr) / (2*a);
+            double k1 = (-b + Math.sqrt(diskr)) / (2*a);
+            double k2 = (-b - Math.sqrt(diskr)) / (2*a);
             System.out.println(k1 + " " +k2);
         }
         else if (diskr == 0) {
