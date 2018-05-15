@@ -1,4 +1,4 @@
-package by.it._tasks_.buko.lesson02;
+package by.it.bukovp.lesson02;
 
 /*
 напишите тело main программы которая выводит на экран 5 строк
@@ -9,8 +9,8 @@ package by.it._tasks_.buko.lesson02;
 */
 class TaskA2 {
     public static void main(String[] args) {
-        int n=5;
-        for(int i=0; i<n; i++) {
+        int times = 5;
+        for (int i=0; i<times; i++) {
             System.out.println("Я начинаю изучать Java!");
         }
     }

@@ -1,4 +1,4 @@
-package by.it._tasks_.bukovp.lesson02;
+package by.it.bukovp.lesson02;
 
 import java.util.Scanner;
 

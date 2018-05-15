@@ -1,4 +1,4 @@
-package by.it._tasks_.buko.lesson02;
+package by.it.bukovp.lesson02;
 
 class TaskA1 {
 /*
