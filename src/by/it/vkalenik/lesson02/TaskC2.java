@@ -22,13 +22,18 @@ class TaskC2 {
         int a = sc.nextInt();
         int b = i + a;
         System.out.println("DEC: " + i + "+" + a + "= " + b);
-//      String b = Integer.toBinaryString(b);
-//      String i = Integer.toBinaryString(i);
-        String binary = Integer.toBinaryString(a);
-        if (binary.length() > 8) binary = binary.substring(binary.length() - 8);
-        binary = String.format("%8s", binary).replace(" ", "0");
-        System.out.printf(binary, "BIN: " + i + "+" + a + "= " + b);
+        String bi = Integer.toBinaryString(i);
+        String ba = Integer.toBinaryString(a);
+        String bb = Integer.toBinaryString(b);
+        System.out.println("BIN: " + bi + "+" + ba + "= " + bb);
+        String hi = Integer.toHexString(i);
+        String ha = Integer.toHexString(a);
+        String hb = Integer.toHexString(b);
+        System.out.println("HEX: " + hi + "+" + ha + "= " + hb);
+        String oi = Integer.toOctalString(i);
+        String oa = Integer.toOctalString(a);
+        String ob = Integer.toOctalString(b);
+        System.out.println("DEC: " + oi + "+" + oa + "= " + ob);
     }
 }
-
 
