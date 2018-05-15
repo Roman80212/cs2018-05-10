@@ -36,9 +36,8 @@ import java.util.Scanner;
 class TaskC3 {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        int weight=sc.nextInt();
         System.out.println("Ввод:");
-        System.out.println(weight);
+        int weight=sc.nextInt();
         System.out.println();
         System.out.println("Вывод:");
         System.out.println(getWeight(weight));
