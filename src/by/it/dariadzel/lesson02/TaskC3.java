@@ -1,4 +1,5 @@
 package by.it.dariadzel.lesson02;
+
 import java.util.Scanner;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
@@ -38,15 +39,14 @@ class TaskC3 {
         int a = sc.nextInt();
 
         System.out.println(getWeight(a));
-        
+
     }
 
-    public static double getWeight(int weight){
-       double marsWeight = weight / 9.81 * 3.86;
-        double templateDouble = marsWeight;
+    public static double getWeight(int weight) {
+        double templateDouble = weight / 9.81 * 3.86;
         double newDouble = new BigDecimal(templateDouble).setScale(2, RoundingMode.HALF_DOWN).doubleValue();
         return newDouble;
-        
+
 
     }
 }
