@@ -39,15 +39,15 @@ class TaskB2 {
         int c = scan.nextInt();
         diskr = b*b -4*a*c;
         if (diskr > 0) {
-            System.out.println("Вавод:");
-            double k1 = (-b) + Math.sqrt(diskr) / (2*a);
-            double k2 = (-b) - Math.sqrt(diskr) / (2*a);
+            System.out.println("Вывод:");
+            double k1 = -b + Math.sqrt(diskr) / (2*a);
+            double k2 = -b - Math.sqrt(diskr) / (2*a);
             System.out.println(k1 + " " +k2);
         }
         else if (diskr == 0) {
             System.out.println("Вывод:");
-            double k3 = (-b) / (2*a);
-            System.out.println();
+            double k3 = -b / (2*a);
+            System.out.println(k3);
         }
         else {
             System.out.println("Вывод:");
