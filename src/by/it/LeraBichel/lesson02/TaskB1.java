@@ -16,5 +16,15 @@ Scanner sc=new Scanner(System.in);
 
  */
 
+import java.util.Scanner;
+
 class TaskB1 {
-}
+    public static void main (String[] args){
+        int a;
+        Scanner in = new Scanner(System.in);
+        a=in.nextInt();
+        int b=a*a;
+        System.out.print("Квадрат="+b);
+        }
+    }
+
