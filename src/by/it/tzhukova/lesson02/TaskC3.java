@@ -37,8 +37,7 @@ class TaskC3 {
 
     public static double getWeight(int weight){
         double m = 3.86 * weight / 9.81;
-        double temp = m;
-        double mn = new BigDecimal(temp).setScale(2, RoundingMode.HALF_UP).doubleValue();
+        double mn = new BigDecimal(m).setScale(2, RoundingMode.HALF_UP).doubleValue();
         return mn;
     }
 
