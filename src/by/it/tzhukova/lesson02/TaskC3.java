@@ -29,6 +29,25 @@ package by.it.tzhukova.lesson02;
 
 
 */
+import java.util.Scanner;
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+
 class TaskC3 {
+
+    public static double getWeight(int weight){
+        double m = 3.86 * weight / 9.81;
+        double temp = m;
+        double mn = new BigDecimal(temp).setScale(2, RoundingMode.HALF_UP).doubleValue();
+        return mn;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int wm = sc.nextInt();
+
+        System.out.println(getWeight(wm));
+
+    }
 
 }
