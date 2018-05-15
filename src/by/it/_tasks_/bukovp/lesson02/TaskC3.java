@@ -32,16 +32,20 @@ import java.util.Scanner;
 
 */
 class TaskC3 {
-/*    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int w = sc.nextInt();
-            public static double getWeight(int weight) {
-                double speed1 = 9.81;
-                double speed2 = 3.86;
-                double k = speed1/speed2;
-                double res = weight*k;
-                return res;
-            }
-        } */
+    public static final double gEarth = 9.81;
+    public static final double gMars = 3.86;
+    public static void main(String[] args) {
+        int w;
+        System.out.println("Введите вес человека в килограммах: ");
+        Scanner scanner = new Scanner(System.in);
+        w = scanner.nextInt();
+
+        public static double getWeight(int weight) {
+            double k;
+            double res;
+            k = gEarth / gMars;
+            res = weight*k;
+        }
     }
+}
 
