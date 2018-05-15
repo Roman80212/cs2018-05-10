@@ -29,9 +29,9 @@ class TaskC2 {
         String binary_1 = Integer.toBinaryString(input_1);
         String binary_2 = Integer.toBinaryString(input_2);
         String binary_s = Integer.toBinaryString(SUM);
-        String hex_1  = Integer.toHexString(input_1).toUpperCase();
-        String hex_2  = Integer.toHexString(input_2).toUpperCase();
-        String hex_s  = Integer.toHexString(SUM).toUpperCase();
+        String hex_1  = Integer.toHexString(input_1).toLowerCase();
+        String hex_2  = Integer.toHexString(input_2).toLowerCase();
+        String hex_s  = Integer.toHexString(SUM).toLowerCase();
         String oct_1  = Integer.toOctalString(input_1);
         String oct_2  = Integer.toOctalString(input_2);
         String oct_s  = Integer.toOctalString(SUM);
