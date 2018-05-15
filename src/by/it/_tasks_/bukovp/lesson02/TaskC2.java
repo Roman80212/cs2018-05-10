@@ -18,11 +18,11 @@ OCT:42+32=74
 class TaskC2 {
     public static void main(String[] args) {
         int num1, num2, sumdec;
-        System.out.println("Введите два числа с клавиатуры: ");
-        Scanner sc1 = new Scanner(System.in);
-        num1 = sc1.nextInt();
-        Scanner sc2 = new Scanner(System.in);
-        num2 = sc2.nextInt();
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите первое число: ");
+        num1 = scanner.nextInt();
+        System.out.println("Введите второе число: ");
+        num2 = scanner.nextInt();
         sumdec = num1 + num2;
         String convertbin1 = Integer.toBinaryString(num1);
         String convertbin2 = Integer.toBinaryString(num2);
