@@ -22,8 +22,8 @@ class TaskC2 {
         int a = sc.nextInt();
         int b = i + a;
         System.out.println("DEC: " + i + "+" + a + "= " + b);
-//        String b = Integer.toBinaryString(b);
-//        String i = Integer.toBinaryString(i);
+//      String b = Integer.toBinaryString(b);
+//      String i = Integer.toBinaryString(i);
         String binary = Integer.toBinaryString(a);
         if (binary.length() > 8) binary = binary.substring(binary.length() - 8);
         binary = String.format("%8s", binary).replace(" ", "0");
