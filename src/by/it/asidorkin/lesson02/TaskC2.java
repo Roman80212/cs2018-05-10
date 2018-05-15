@@ -1,6 +1,5 @@
 package by.it.asidorkin.lesson02;
 
-import java.lang.reflect.Method;
 import java.util.Scanner;
 
 /* Нужно написать программу, которая вводит два числа с клавиатуры
