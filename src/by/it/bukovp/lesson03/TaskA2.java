@@ -21,5 +21,14 @@ Lesson 03. Task A2. Стихотворение
 Для автоматической проверки откройте и запустите класс Testing
 */
 class TaskA2 {
-
+    public static void main(String[] args) {
+        System.out.println("Мое любимое стихотворение:");
+        String str1 = "Строка 11111";
+        String str2 = "Строка 22222";
+        String str3 = "Строка 33333";
+        String str4 = "Строка 44444";
+        String str5 = "Строка 55555";
+        System.out.println(str1 + "\n" +str2 + "\n" +str3);
+        System.out.println(str4 + "\n" + str5);
+    }
 }
