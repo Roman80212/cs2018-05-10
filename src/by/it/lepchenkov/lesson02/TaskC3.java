@@ -44,10 +44,6 @@ class TaskC3 {
         weightOnEarth = sc.nextInt();
         double result = TaskC3.getWeight(weightOnEarth);
         System.out.println(result);
-        int a = 4;
-        int b = 5;
-        int c = ++a+b++;
-        System.out.println(c);
 
     }
 }
