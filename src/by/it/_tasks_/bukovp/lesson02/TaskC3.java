@@ -34,18 +34,20 @@ import java.util.Scanner;
 class TaskC3 {
     public static final double gEarth = 9.81;
     public static final double gMars = 3.86;
+    public static double getWeight(int weight) {
+        double k;
+        double res1, res;
+        k = gEarth / gMars;
+        res1 = weight*k;
+        String str1 = String.format("%.2d", res1);
+        res = Integer.parseInt(str1);
+        return res;
+    }
     public static void main(String[] args) {
         int w;
         System.out.println("Введите вес человека в килограммах: ");
         Scanner scanner = new Scanner(System.in);
         w = scanner.nextInt();
-
-        public static double getWeight(int weight) {
-            double k;
-            double res;
-            k = gEarth / gMars;
-            res = weight*k;
-        }
     }
 }
 
