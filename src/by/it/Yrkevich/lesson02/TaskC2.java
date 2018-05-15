@@ -22,20 +22,24 @@ class TaskC2 {
         int x = sc.nextInt();
         int z = i + x;
         System.out.println("DEC:" + i + "+" + x + "=" + z);
-        //двоичная
+ //2
         Integer number = i;
         String q = Integer.toBinaryString(number);
 
         Integer n = x;
         String w = Integer.toBinaryString(n);
 
-        System.out.println("BIN:" + w +"+" +q+ "="+ w+q);
+        Integer k = z;
+        String g = Integer.toBinaryString(k);
+        System.out.println("BIN:" + w +"+" +q+ "="+g);
 //16
 
+        g = Integer.toHexString(k).toUpperCase();
+
         q = Integer.toHexString(number).toUpperCase();
-        System.out.println(q);
+
         w = Integer.toHexString(n).toUpperCase();
-        System.out.println(w);
+        System.out.println("HEX:" + w +"+" +q+ "="+g);   //w
  //8
         q = Integer.toOctalString(number);
         System.out.println(q);
