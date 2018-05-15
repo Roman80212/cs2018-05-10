@@ -38,9 +38,7 @@ class TaskC3 {
         double k;
         double res1, res;
         k = gEarth / gMars;
-        res1 = weight*k;
-        String str1 = String.format("%.2d", res1);
-        res = Integer.parseInt(str1);
+        res = weight*k;
         return res;
     }
     public static void main(String[] args) {
