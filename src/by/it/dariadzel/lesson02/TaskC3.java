@@ -42,11 +42,27 @@ class TaskC3 {
 
     }
 
+
     public static double getWeight(int weight) {
+        double gm = 3.86;
+        double ge = 9.81;
+        double res = weight / ge * gm;
+        int i = (int) (res * 100);
+        double delta = res * 100 - i;
+        if (delta >= 0.5) i++;
+
+        return i / 100.0;
+
+
+    }
+
+}
+/*
+ public static double getWeight(int weight) {
         double templateDouble = weight / 9.81 * 3.86;
         double newDouble = new BigDecimal(templateDouble).setScale(2, RoundingMode.HALF_DOWN).doubleValue();
         return newDouble;
 
 
     }
-}
+ */
