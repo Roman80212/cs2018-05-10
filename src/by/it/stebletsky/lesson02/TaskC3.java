@@ -36,13 +36,12 @@ class TaskC3 {
         System.out.println("Ввод:");
         Scanner in = new Scanner(System.in);
         int i = in.nextInt();
-        System.out.println("Вывод:\n" + String.format("%.4g%n", i / 9.81 * 3.86));
+        System.out.println(getWeight(i));
     }
-    private static void getWeight(double arg) {
-        Scanner in = new Scanner(System.in);
-        int i = in.nextInt();
-        double w = i / 9.81 * 3.86;
+    private static double getWeight(int arg) {
 
+        double w = arg / 9.81 * 3.86;
+return Math.round(w*100)/100.0;
     }
 
     }
