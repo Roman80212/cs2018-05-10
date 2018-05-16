@@ -37,8 +37,9 @@ class TaskC3 {
     public static double getWeight(int weight) {
         double k;
         double res1, res;
-        k = gEarth / gMars;
-        res = weight*k;
+        k = (double) gEarth / gMars;
+        res1 = (double) weight*k;
+        res = Math.round(res1 * 100) / 100.0;
         return res;
     }
     public static void main(String[] args) {
