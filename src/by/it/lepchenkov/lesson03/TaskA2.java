@@ -27,7 +27,7 @@ class TaskA2 {
         String b = "Златая цепь на дубе том:";
         String c = "И днём и ночью кот учёный";
         String d = "Всё ходит по цепи кругом;";
-        System.out.println(a + System.lineSeparator() + b + System.lineSeparator() + c + System.lineSeparator() + d + System.lineSeparator());
+        System.out.println(a + "\n" + b + System.lineSeparator() + c + System.lineSeparator() + d + System.lineSeparator());
 
 
     }

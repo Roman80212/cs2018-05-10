@@ -29,12 +29,20 @@ package by.it.lepchenkov.lesson02;
 
 
 */
+
 import java.util.Scanner;
+
 class TaskC3 {
     static double getWeight(int weight) {
         double x;
-        x = weight / 9.81 * 3.86;
-        return Math.round(x * 100.0) / 100.0;
+        double gm = 3.86;
+        double ge = 9.81;
+        double result = weight / ge * gm;
+        int i = (int) result * 100;
+        double delta = result * 100 - i;
+        if (delta >= 0.5) i++;
+        return i/100.0;
+
     }
 
     public static void main(String args[]) {
