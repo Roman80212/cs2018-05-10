@@ -29,6 +29,45 @@ Lesson 03. Task B2. Нужно написать программу, котора
 Отрицательный дискриминант
 
 */
-class TaskB2 {
 
+/*
+Формула дискриминанта: D = b*b - 4ac.
+ D < 0, корней не имеется;
+ D = 0, у уравнения один корень;
+ D > 0, у уравнения два корня.
+ Корни у квадратного уравнения находятся по следующей формуле: X1= -b + √D/2а; X2= -b - √D/2a.
+ */
+
+import java.util.Scanner;
+
+class TaskB2 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
+
+        if (dis(a, b, c) > 0) {
+            double x1, x2;
+            x1 = (-b - Math.sqrt(dis(a, b, c))) / (2 * a);
+            x2 = (-b + Math.sqrt(dis(a, b, c))) / (2 * a);
+            System.out.println(x1 + " " + x2);
+        }
+        else if (dis(a, b, c) == 0) {
+            double x;
+            x = -b / (2 * a);
+            System.out.println(x);
+        }
+        else {
+            System.out.println("Отрицательный дискриминант");
+        }
+
+
+    }
+    public  static double dis(int a, int b , int c){
+       double d = (b * b) - 4 * a * c;
+
+        return d;
+
+    }
 }
