@@ -1,4 +1,7 @@
 package by.it.asidorkin.lesson03;
+
+import java.util.Scanner;
+
 /*
     Сумма цифр четырехзначного числа
 
@@ -21,11 +24,29 @@ package by.it.asidorkin.lesson03;
 */
 public class TaskC2 {
 
+    public static int sumDigitsInNumber(int x){
+        int a=x/1000; //a=1
+        int b=x%1000/100;//a=2
+        int c=x%100/10;//
+        int d=x%100%10;
+        int sumDigitsInNumber=a+b+c+d;
+        return sumDigitsInNumber;
+    }
 
+    public static void main(String[] args)  {
+        Scanner number = new Scanner(System.in);
+        int x = number.nextInt();//1234
+
+        int c=sumDigitsInNumber(x);
+        System.out.println(c);
+
+
+    }
+}
 
 
 //    public static void main(String[] args) {
 //        System.out.println(sumDigitsInNumber(5467));
 //    }
 
-}
+

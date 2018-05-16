@@ -32,12 +32,19 @@ import java.util.Scanner;
 
 */
 class TaskC3 {
-    public static void main(String[] getWeight) {
-        Scanner weight = new Scanner(System.in);
-        int a = weight.nextInt();
+    public static double getWeight(int a){
+
         double i=a/9.81*3.86*100;
-        double c= Math.round(i);
-            System.out.println(c/100);
+        double getWeight= Math.round(i);
+        return getWeight/100;
     }
 
+    public static void main(String[] args)  {
+        Scanner weight = new Scanner(System.in);
+        int a = weight.nextInt();
+       double c=getWeight(a);
+        System.out.println(c);
+
+
+    }
 }
