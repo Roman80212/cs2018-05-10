@@ -1,4 +1,4 @@
-package by.it._tasks_.lesson03;
+package by.it.stebletsky.lesson03;
 
 /*
 Lesson 03. Task A1. Калькулятор.
@@ -33,4 +33,17 @@ Scanner sc=new Scanner(System.in);
 
  */
 
+import java.util.Scanner;
 
+class TaskA1 {
+    public static void main(String[] args) {
+        System.out.println("Ввод: \n");
+        Scanner scan = new Scanner(System.in);
+        int a = scan.nextInt(), b = scan.nextInt();
+        int sum = a + b, sub = a - b, mul = a * b, div = a/b, mod = a % b;
+        System.out.println(sum+" "+sub+" "+mul+" "+div+" "+mod);
+        double dsum = a + b, dsub = a - b, dmul = a * b, ddiv = a/ (double) b, dmod = a % b;
+        System.out.println(dsum+" " + dsub + " " + dmul + " " + ddiv + " " + dmod);
+    }
+
+}

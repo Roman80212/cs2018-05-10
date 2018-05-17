@@ -1,4 +1,4 @@
-package by.it._tasks_.lesson03;
+package by.it.LeraBichel.lesson03;
 
 /*
 Lesson 03. Task A1. Калькулятор.
@@ -33,4 +33,6 @@ Scanner sc=new Scanner(System.in);
 
  */
 
+class TaskA1 {
 
+}

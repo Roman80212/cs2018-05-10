@@ -1,4 +1,4 @@
-package by.it._tasks_.lesson03;
+package by.it.bukovp.lesson03;
 
 /*
 Lesson 03. Task A1. Калькулятор.
@@ -33,4 +33,25 @@ Scanner sc=new Scanner(System.in);
 
  */
 
+import java.util.Scanner;
 
+class TaskA1 {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Введите два числа: ");
+        int a = scan.nextInt();
+        int b = scan.nextInt();
+        int sum = a+b;
+        int sub = a-b;
+        int mul = a*b;
+        int div = a/b;
+        int mod = a%b;
+        System.out.println(sum + " " + sub + " " + mul + " " + div + " " + mod);
+        double dsum = a+(double)b;
+        double dsub = a-(double)b;
+        double dmul = a*(double)b;
+        double ddiv = a/(double)b;
+        double dmod = a%(double)b;
+        System.out.println(dsum + " " + dsub + " " + dmul + " " + ddiv + " " + dmod);
+    }
+}
