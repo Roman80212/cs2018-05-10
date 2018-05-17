@@ -26,9 +26,8 @@ public class TaskC2 {
         int x3=(x-x1*1000-x2*100)/10;
         int x4=x-x1*1000-x2*100 - x3*10;
         return x1+x2+x3+x4;
-
     }
-    
+
     public static void main(String[] args) {
         System.out.println(TaskC2.sumDigitsInNumber(5467));
     }

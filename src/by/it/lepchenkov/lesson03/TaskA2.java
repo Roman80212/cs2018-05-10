@@ -29,7 +29,6 @@ class TaskA2 {
         String d = "Всё ходит по цепи кругом;";
         System.out.println(a + "\n" + b + System.lineSeparator() + c + System.lineSeparator() + d + System.lineSeparator());
 
-
     }
 
 }
