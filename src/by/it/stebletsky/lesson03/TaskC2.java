@@ -1,4 +1,7 @@
 package by.it.stebletsky.lesson03;
+
+import java.util.Scanner;
+
 /*
     Сумма цифр четырехзначного числа
 
@@ -20,12 +23,20 @@ package by.it.stebletsky.lesson03;
     5. Метод sumDigitsInNumber должен правильно возвращать сумму всех цифр в числе number.
 */
 public class TaskC2 {
+    public static void main(String[] args) {
+        System.out.println("Введите число: ");
+        Scanner sc = new Scanner(System.in);
+        int i = sc.nextInt();
+        System.out.println("Сумма цифр: " + sumDigitsInNumber(i));
+    }
 
-
-
-
-//    public static void main(String[] args) {
-//        System.out.println(sumDigitsInNumber(5467));
-//    }
-
+    public static int sumDigitsInNumber(int i) {
+        int x = i;
+        int s = 0;
+        while (x != 0) {
+            s += x % 10;
+            x /= 10;
+        }
+        return s;
+    }
 }

@@ -39,20 +39,11 @@ class TaskA1 {
     public static void main(String[] args) {
         System.out.println("Ввод: \n");
         Scanner scan = new Scanner(System.in);
-        int a = scan.nextInt();
-        int b = scan.nextInt();
-        int sum = a + b;
-        int sub = a - b;
-        int mul = a * b;
-        int div = a/b;
-        int mod = a % b;
+        int a = scan.nextInt(), b = scan.nextInt();
+        int sum = a + b, sub = a - b, mul = a * b, div = a/b, mod = a % b;
         System.out.println(sum+" "+sub+" "+mul+" "+div+" "+mod);
-        double dsum = a + b;
-        double dsub = a - b;
-        double dmul = a * b;
-        double ddiv = a/ (double) b;
-        double dmod = a % b;
-        System.out.println(dsum+" "+dsub+" "+dmul+" "+ddiv+" "+dmod);
+        double dsum = a + b, dsub = a - b, dmul = a * b, ddiv = a/ (double) b, dmod = a % b;
+        System.out.println(dsum+" " + dsub + " " + dmul + " " + ddiv + " " + dmod);
     }
 
 }
