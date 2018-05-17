@@ -33,9 +33,7 @@ Scanner sc=new Scanner(System.in);
 
  */
 
-import com.sun.source.util.SourcePositions;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 class TaskA1 {
