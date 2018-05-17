@@ -1,6 +1,4 @@
-package by.it._tasks_.lesson04;
-
-import java.util.Scanner;
+package by.it.bukovp.lesson04;
 
 /*
 Определите количество дней в году
