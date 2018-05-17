@@ -33,7 +33,6 @@ public class TaskA1 {
                 System.out.println("Меня интересует высокая зарплата!");
             }
             else System.out.println("Я изучаю программирование.");
-
             }
         }
 
