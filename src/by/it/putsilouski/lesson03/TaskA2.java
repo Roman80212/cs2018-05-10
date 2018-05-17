@@ -1,5 +1,7 @@
 package by.it.putsilouski.lesson03;
 
+import java.util.Scanner;
+
 /*
 Lesson 03. Task A2. Стихотворение
 
@@ -21,5 +23,20 @@ Lesson 03. Task A2. Стихотворение
 Для автоматической проверки откройте и запустите класс Testing
 */
 class TaskA2 {
+    public static void main(String[] args) {
+//        Scanner scan = new Scanner(System.in);
+//        String a = scan.nextLine();
+//        String b = scan.nextLine();
+//        String c = scan.nextLine();
+//        String d = scan.nextLine();
+          String a = "У лукоморья дуб зелёный;";
+          String b = "Златая цепь на дубе том:";
+          String c = "И днём и ночью кот учёный;";
+          String d = "Всё ходит по цепи кругом;";
 
+        System.out.println("Мое любимое стихотворение:\n" + a + "\n" + b + "\n" + c + "\n" + d);
+
+    }
+
+// метод scan next
 }
