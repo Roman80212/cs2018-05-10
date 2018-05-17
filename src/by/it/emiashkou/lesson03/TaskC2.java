@@ -20,21 +20,17 @@ import java.util.Scanner;
     2. Метод sumDigitsInNumber(int) должен быть не приватным и статическим.
     3. Метод sumDigitsInNumber должен возвращать значение типа int.
     4. Метод sumDigitsInNumber не должен ничего выводить на экран.
-    5. Метод sumDigitsInNumber должен правильно возвращать сумму всех цифр в числе number.
+    5. Метод sumDigitsInNmber должен правильно возвращать сумму всех цифр в числе number.
 */
 public class TaskC2 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int number =sc.nextInt();
+        System.out.println(sumDigitsInNumber( number));
+    }
+    public static int   sumDigitsInNumber(int number) {
+        int k = (number % 10) + ((number/10)%10) + ((number/100)%10) + ((number/1000)%10);
+        return  k;
 
-
-
-
-
-
-
-
-
-
-//    public static void main(String[] args) {
-//        System.out.println(sumDigitsInNumber(5467));
-//    }
-
+    }
 }
