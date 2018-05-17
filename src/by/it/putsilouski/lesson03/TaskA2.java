@@ -38,5 +38,6 @@ class TaskA2 {
 
     }
 
-// метод scan next
+
+
 }
