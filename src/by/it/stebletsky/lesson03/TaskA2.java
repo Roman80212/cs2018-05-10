@@ -22,7 +22,7 @@ Lesson 03. Task A2. Стихотворение
 */
 class TaskA2 {
     public static void main(String[] args) {
-        System.out.println("Мое любимое стихотворение:\n");
+        System.out.print("Мое любимое стихотворение:\n");
 
         String a = "          Паміж пяскоў Егіпецкай зямлі,\n";
         String b = "          Над хвалямі сінеючага Ніла,\n";
