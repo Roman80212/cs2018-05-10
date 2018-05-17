@@ -41,4 +41,6 @@ public class TaskA3 {
            // else if (a==b)
    // System.out.println(a + " " + b);
 //else if (b==c)
+   // System.out.println(a + " " + b);
+
 }
