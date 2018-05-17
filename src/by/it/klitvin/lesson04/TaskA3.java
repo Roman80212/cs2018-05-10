@@ -37,6 +37,6 @@ public class TaskA3 {
 
           //  if (a==b && b==c)
                // System.out.println(a + " " + b + " " + c);
-           // else if ()
+           // else if (a==b)
 
 }
