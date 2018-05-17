@@ -28,15 +28,15 @@ public class TaskC2 {
     public static int sumDigitsInNumber(int number) {
 
         int sum = 0;
-        int currentDigit;
-        currentDigit = number % 10;
-        sum = sum + currentDigit;
+       // int a;
+      //  a = number % 10;
+        sum = sum + (number % 10);
         number = number / 10;
-        currentDigit = number % 10;
-        sum = sum + currentDigit;
+       // a = number % 10;
+        sum = sum + (number % 10);
         number = number / 10;
-        currentDigit = number % 10;
-        sum = sum + currentDigit;
+       // a = number % 10;
+        sum = sum + (number % 10);
         number = number / 10;
         sum = sum + number;
         return sum;
