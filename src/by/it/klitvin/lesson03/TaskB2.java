@@ -32,12 +32,24 @@ Lesson 03. Task B2. Нужно написать программу, котора
 
 */
 class TaskB2 {
-    public static void main(String[] args) {
-        System.out.println("Введите любое число:");
-        Scanner scan = new Scanner(System.in);
-        int a = scan.nextInt();
-        int i = a*a;
-        System.out.println("Квадрат данного числа" + "=" + i);
-    }
+ //   public static void main(String[] args) {
+   //     System.out.println("Ввод:");
+        //    Scanner scan = new Scanner(System.in);
+        //        int a = scan.nextInt();
+        //  int b = scan.nextInt();
+        //   int c = scan.nextInt();
+       // System.out.println(getdis( ));
+
+     //   System.out.println("Вывод:" );
+    //}
+      //  public static double getdis (int dis)
+
+       // {
+     //       double d =(b*b)-(4*a*c);
+
+     //       return d;
+
+     //   }
+
 
 }
