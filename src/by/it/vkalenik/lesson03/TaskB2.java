@@ -34,19 +34,16 @@ Lesson 03. Task B2. Нужно написать программу, котора
 class TaskB2 {
 
     public static double dis(int a, int b, int c) {
+
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
         double dis = b * b - 4 * a * c;
-        return dis;
-            Scanner sc = new Scanner(System.in);
-            a = sc.nextInt();
-            b = sc.nextInt();
-            c = sc.nextInt();
-        }
         if (dis > 0) {
             double x1 = (-b - Math.sqrt(dis)) / (2 * a);
             double x2 = (-b + Math.sqrt(dis)) / (2 * a);
             System.out.println(x1 + " " + x2);
-            return dis();
         }
-return 0;
     }
 }
