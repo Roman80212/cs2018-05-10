@@ -22,6 +22,31 @@ package by.it.putsilouski.lesson04;
  */
 
 
-public class TaskA3 {
+import java.util.Scanner;
 
+public class TaskA3 {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int a = in.nextInt();
+        int b = in.nextInt();
+        int c = in.nextInt();
+
+        if (a == b && b == c) {
+            System.out.println(a + " " + b + " " + c);
+        } else {
+            if (a == b) {
+                System.out.println(a + " " + b);
+            }
+
+            if (b == c) {
+                System.out.println(b + " " + c);
+            }
+
+            if (a == c) {
+                System.out.println(a + " " + c);
+            }
+
+        }
+    }
 }
+
