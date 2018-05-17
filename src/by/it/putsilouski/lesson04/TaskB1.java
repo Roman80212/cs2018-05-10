@@ -28,17 +28,21 @@ import java.util.Scanner;
 
 //*/
 public class TaskB1 {
-//    public static void main(String[] args) {
-//        Scanner in = new Scanner(System.in);
-//        int y = in.nextInt();
-//        if (((y % 4) == 0) &&((y % 0) != 100)  ) {
-//            if ((y % 0) != 100) {
-//                System.out.println(366 + " - для високосного года");
-//            }
-//
-//        }
-//
-//
-//    }
-
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int y = in.nextInt();
+        if ((y % 4) == 0) {
+            if (((y % 100) == 0) && ((y % 400) == 0)) {
+                System.out.println("количество дней в году: 365");
+            } else {
+                System.out.println("количество дней в году: 366");
+            }
+        } else {
+            System.out.println("количество дней в году: 365");
+        }
+    }
 }
+
+//год високосный
+// /4 остаток 0
+// /
