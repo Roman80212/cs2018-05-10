@@ -32,24 +32,24 @@ Lesson 03. Task B2. Нужно написать программу, котора
 
 */
 class TaskB2 {
- //   public static void main(String[] args) {
-   //     System.out.println("Ввод:");
-        //    Scanner scan = new Scanner(System.in);
-        //        int a = scan.nextInt();
-        //  int b = scan.nextInt();
-        //   int c = scan.nextInt();
-       // System.out.println(getdis( ));
+  // public static void main(String[] args) {
 
-     //   System.out.println("Вывод:" );
-    //}
-      //  public static double getdis (int dis)
 
-       // {
-     //       double d =(b*b)-(4*a*c);
+       //System.out.println("Ввод:" );
 
-     //       return d;
+            //Scanner scan = new Scanner(System.in);
+            //int a = scan.nextInt();
+           // int b = scan.nextInt();
+           // int c = scan.nextInt();
+       //System.out.println(dis(a))
+ //  }
+          //   public static double dis(int a,int b,int c);
+         //  {
+           //    double d =(b*b)-(4*a*c);
+            //   return d;
+         //  }
 
-     //   }
-
+     //  System.out.println("Вывод:" );
+        //}
 
 }
