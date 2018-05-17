@@ -1,0 +1,52 @@
+package by.it.asidorkin.lesson03;
+
+import java.util.Scanner;
+
+/*
+    Сумма цифр четырехзначного числа
+
+    Реализуйте метод sumDigitsInNumber(int number).
+    Метод на вход принимает целое четырехзначное число.
+    Нужно посчитать сумму цифр этого числа, и вернуть эту сумму.
+
+    Пример:
+    Метод sumDigitsInNumber вызывается с параметром 5467.
+
+    Пример вывода:
+    22
+
+    Требования:
+    1. В методе sumDigitsInNumber не могут быть использованы никакие дополнительные классы.
+    2. Метод sumDigitsInNumber(int) должен быть не приватным и статическим.
+    3. Метод sumDigitsInNumber должен возвращать значение типа int.
+    4. Метод sumDigitsInNumber не должен ничего выводить на экран.
+    5. Метод sumDigitsInNumber должен правильно возвращать сумму всех цифр в числе number.
+*/
+public class TaskC2 {
+
+    public static int sumDigitsInNumber(int x){
+        int a=x/1000; //a=1
+        int b=x%1000/100;//a=2
+        int c=x%100/10;//
+        int d=x%100%10;
+        int sumDigitsInNumber=a+b+c+d;
+        return sumDigitsInNumber;
+    }
+
+    public static void main(String[] args)  {
+        Scanner number = new Scanner(System.in);
+        int x = number.nextInt();//1234
+
+        int c=sumDigitsInNumber(x);
+        System.out.println(c);
+
+
+    }
+}
+
+
+//    public static void main(String[] args) {
+//        System.out.println(sumDigitsInNumber(5467));
+//    }
+
+
