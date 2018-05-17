@@ -33,7 +33,7 @@ Lesson 03. Task B2. Нужно написать программу, котора
 */
 class TaskB2 {
 
-    public static double dis(int a, int b, int c) {
+  /*  public static double dis(int a, int b, int c) {
 
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
@@ -45,5 +45,5 @@ class TaskB2 {
             double x2 = (-b + Math.sqrt(dis)) / (2 * a);
             System.out.println(x1 + " " + x2);
         }
-    }
+    }*/
 }
