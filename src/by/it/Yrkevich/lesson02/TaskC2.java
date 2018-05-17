@@ -22,29 +22,24 @@ class TaskC2 {
         int x = sc.nextInt();
         int z = i + x;
         System.out.println("DEC:" + i + "+" + x + "=" + z);
- //2
-        Integer number = i;
-        String q = Integer.toBinaryString(number);
 
-        Integer n = x;
-        String w = Integer.toBinaryString(n);
+        String bi = Integer.toBinaryString(i);
+        String bx = Integer.toBinaryString(x);
+        String bs = Integer.toBinaryString(i + x);
+        System.out.println("BIN:" + bi + "+" + bx  + "=" + bs);
 
-        Integer k = z;
-        String g = Integer.toBinaryString(k);
-        System.out.println("BIN:" + w +"+" +q+ "="+g);
-//16
+        String hi = Integer.toHexString(i);
+        String hx = Integer.toHexString(x);
+        String hs= Integer.toHexString(i+x);
+        System.out.println("HEX:" + hi + "+" + hx  + "=" + hs);
 
-        g = Integer.toHexString(k).toUpperCase();
+        String oi = Integer.toOctalString(i);
+        String ox = Integer.toOctalString(x);
+        String os = Integer.toOctalString(i+x);
+        System.out.println("OCT:" + oi + "+" + ox  + "=" + os);
 
-        q = Integer.toHexString(number).toUpperCase();
 
-        w = Integer.toHexString(n).toUpperCase();
-        System.out.println("HEX:" + w +"+" +q+ "="+g);   //w
- //8
-        q = Integer.toOctalString(number);
-        System.out.println(q);
-        w = Integer.toOctalString(n);
-        System.out.println(w);
+
 
     }
 
