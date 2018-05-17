@@ -24,6 +24,7 @@ package by.it.klitvin.lesson04;
 
 import com.sun.jdi.PathSearchingVirtualMachine;
 
+
 import java.util.Scanner;
 
 public class TaskA3 {
@@ -38,5 +39,6 @@ public class TaskA3 {
           //  if (a==b && b==c)
                // System.out.println(a + " " + b + " " + c);
            // else if (a==b)
-
+   // System.out.println(a + " " + b);
+//else if (b==c)
 }
