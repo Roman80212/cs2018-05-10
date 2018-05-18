@@ -25,7 +25,22 @@ package by.it.dgus.lesson04;
  */
 
 
+import java.util.Scanner;
 
 public class TaskB3 {
+    public static void main(String[] args) {
+        System.out.println("Ввод:");
+        Scanner scan=new Scanner(System.in);
+        int i=scan.nextInt();
+        int j=1;
+        int sum=0;
+        System.out.println("Вывод:");
+        while (sum+j<=i){
+            sum=sum+j;
+            System.out.print(sum+",");
+            j++;
+        }
 
-}
+        }
+    }
+

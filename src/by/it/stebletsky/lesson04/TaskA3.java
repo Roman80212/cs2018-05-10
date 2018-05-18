@@ -32,7 +32,7 @@ public class TaskA3 {
         int c=scan.nextInt();
         if (a==b && b==c)
             System.out.println(a+" "+b+" "+c);
-        else if (a==b)
+        else if (a==b);
     }
 
 }
