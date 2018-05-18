@@ -33,16 +33,14 @@ public class TaskB3 {
     System.out.println("Ввод:");
         Scanner scan = new Scanner(System.in);
         int a = scan.nextInt();
-
         int sum = 0;
-        int b = 0;
-int c = 0;
+        int c = 1;
         while (a>sum)
-        {sum=b+c;
+        {
+            sum=sum+c;
+            if (a>=sum)
             System.out.print(sum + ",");
-
-            b++;
-             c++;
+            c++;
 
     }
     }
