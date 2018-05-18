@@ -43,7 +43,7 @@ public class TaskC1 {
     public static void main(String[] args) {
         System.out.println("Какую вы хотите зарплату в $$$?");
         Scanner scan = new Scanner(System.in);
-        int a = scan.nextInt();
+        double a = scan.nextInt();
         int month = 0;
         if (a<300 || a>3000)
 
@@ -55,8 +55,11 @@ public class TaskC1 {
                           case 0:
                               System.out.println("За месяц 0 начислено $0.0");
                           case 1:
+
                               System.out.println("За январь начислено" + " " + "$" + 1.5*a);
-                          case 2:
+
+
+                                  case 2:
                               System.out.println("За февраль начислено" + " " + "$" + 1.5*a);
                           case 3:
                               System.out.println("За март начислено" + " " + "$" + 1.5*a);
