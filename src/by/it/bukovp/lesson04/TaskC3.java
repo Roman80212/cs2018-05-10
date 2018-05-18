@@ -24,5 +24,31 @@ package by.it.bukovp.lesson04;
 */
 
 public class TaskC3 {
-
+    public static void main(String[] args) {
+        int i=1;
+        int n=1;
+        int size = 10;
+        String a="один";
+        String b="два";
+        String c="три";
+        String d="четыре";
+        String e="пять";
+        String f="шесть";
+        String w="семь";
+        String x="восемь";
+        String y="девять";
+        String z="десять";
+        while(i<=size)
+        {
+            System.out.print(i+" ");
+            while(n<=(size-1))
+            {
+                n++;
+                System.out.print(i*n+" ");
+            }
+            i++;
+            n=1;
+            System.out.println("");
+        }
+    }
 }
