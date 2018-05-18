@@ -30,10 +30,9 @@ public class TaskB2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int size = sc.nextInt();
-        int i = 1;
         int j = 1;
         while (j <= size) {
-            i = 1;
+            int i = 1;
             while (i <= size) {
                 System.out.print(j * i + " ");
                 i++;
