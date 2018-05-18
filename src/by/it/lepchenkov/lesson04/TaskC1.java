@@ -36,7 +36,78 @@ package by.it.lepchenkov.lesson04;
 За месяц 14 начислено $0.0
 
 */
+
+import java.util.Scanner;
+
 public class TaskC1 {
+     static String monthName(int x) {
+         String month;
+        switch (x) {
+            case 0:
+                month = "месяц 0";
+            break;
+            case 1:
+                month = "январь";
+                break;
+            case 2:
+                month = "февраль";
+                break;
+            case 3:
+                month = "март";
+                break;
+            case 4:
+                month = "апрель";
+                break;
+            case 5:
+                month = "май";
+                break;
+            case 6:
+                month = "июнь";
+                break;
+            case 7:
+                month = "июль";
+                break;
+            case 8:
+                month = "август";
+                break;
+            case 9:
+                month = "сентябрь";
+                break;
+            case 10:
+                month = "октябрь";
+                break;
+            case 11:
+                month = "ноябрь";
+                break;
+            case 12:
+                month = "декабрь";
+                break;
+            case 13:
+                month = "месяц 13";
+                break;
+            case 14:
+                month = "месяц 14";
+                break;
+            default:
+                month = "другой месяц";
+        }
+        return month;
+    }
 
 
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int number = sc.nextInt();
+        if (number <= 300 || number >= 3000) {
+            System.out.println("Мы вам перезвоним!");
+        }
+        else{
+            for (int i=0;i<14;i++){
+                System.out.println("За " + TaskC1.monthName(i)+ " начислено $" );
+            }
+
+        }
+
+    }
 }
