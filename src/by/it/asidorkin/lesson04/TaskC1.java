@@ -1,5 +1,7 @@
 package by.it.asidorkin.lesson04;
 
+import java.util.Scanner;
+
 /*
 Напишите программу которая спрашивает у пользователя:
 Какую вы хотите зарплату в $$$?
@@ -37,6 +39,76 @@ package by.it.asidorkin.lesson04;
 
 */
 public class TaskC1 {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Какую вы хотите зарплату в $$$?");
+        double x = scan.nextInt();
+        double zp=0;
+        int month=0;
+        if (x < 300 || x > 3000) {
+            System.out.println("Мы вам перезвоним!");
+        }else {while (month<=14){ month++;
+            switch (month) {
+                case 1:
+                    System.out.println("За месяц 0 начислено $0.0");
+                    break;
+                case 2:
+                    System.out.println("За январь начислено $"+x*1.5);
+                    break;
+                case 3:
+                    if (x*1.5!=666)
+                    System.out.println("За февраль начислено $"+x*1.5);
+                    break;
+                case 4:
+                    if (x*1.5==666) break;
+                    System.out.println("За март начислено $"+x*1.5);
+                    break;
+                case 5:
+                    if (x*1.5!=666)
+                    System.out.println("За апрель начислено $"+x*1.5);
+                    break;
+                case 6:
+                    if (x*1.5!=666)
+                    System.out.println("За май начислено $"+x*1.5);
+                    break;
+                case 7:
+                    System.out.println("За июнь начислено $"+x);
+                     break;
+                case 8:
+                    if (x*1.5!=666 & x!=666)
+                    System.out.println("За июль начислено $"+x);
+                    break;
+                case 9:
+                    if (x*1.5!=666 & x!=666)
+                    System.out.println("За август начислено $"+x);
+                    break;
+                case 10:
+                    if (x*1.5!=666)
+                    System.out.println("За сентябрь начислено $"+x*1.5);
+                    break;
+                case 11:
+                    if (x*1.5!=666)
+                    System.out.println("За октябрь начислено $"+x*1.5);
+                    break;
+                case 12:
+                    if (x*1.5!=666)
+                    System.out.println("За ноябрь начислено $"+x*1.5);
+                    break;
+                case 13:
+                    if (x*1.5!=666)
+                    System.out.println("За декабрь начислено $"+x*1.5);
+                    break;
+                case 14:
+                    if (x*1.5!=666)
+                    System.out.println("За месяц 13 начислено $0.0");
+                    break;
 
-
-}
+                case 15:
+                    if (x*1.5==666) break;
+                    System.out.println("За месяц 14 начислено $0.0");
+                    break;
+            }
+        }
+            }
+        }
+    }
