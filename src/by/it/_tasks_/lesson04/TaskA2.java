@@ -24,6 +24,11 @@ package by.it._tasks_.lesson04;
 
  */
 
+import java.util.Scanner;
+
 public class TaskA2 {
+    public static void main(String[] args) {
+
+    }
 
 }
