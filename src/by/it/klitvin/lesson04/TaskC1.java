@@ -1,5 +1,7 @@
 package by.it.klitvin.lesson04;
 
+import java.util.Scanner;
+
 /*
 Напишите программу которая спрашивает у пользователя:
 Какую вы хотите зарплату в $$$?
@@ -38,5 +40,16 @@ package by.it.klitvin.lesson04;
 */
 public class TaskC1 {
 
+    public static void main(String[] args) {
+        System.out.println("Какую вы хотите зарплату в $$$?");
+        Scanner scan = new Scanner(System.in);
+        int a = scan.nextInt();
+        int month = 0;
+        if (a<300 || a>3000);
+        System.out.println("Мы вам перезвоним!");
+        else while
 
+
+
+    }
 }
