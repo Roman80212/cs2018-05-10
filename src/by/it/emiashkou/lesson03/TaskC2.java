@@ -31,6 +31,6 @@ public class TaskC2 {
     public static int   sumDigitsInNumber(int number) {
         int k = (number % 10) + ((number/10)%10) + ((number/100)%10) + ((number/1000)%10);
         return  k;
-
+       
     }
 }
