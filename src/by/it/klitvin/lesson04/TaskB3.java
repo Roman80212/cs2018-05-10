@@ -25,7 +25,25 @@ package by.it.klitvin.lesson04;
  */
 
 
+import java.util.Scanner;
 
 public class TaskB3 {
+    public static void main(String[] args) {
 
+    System.out.println("Ввод:");
+        Scanner scan = new Scanner(System.in);
+        int a = scan.nextInt();
+
+        int sum = 0;
+        int b = 0;
+int c = 0;
+        while (a>sum)
+        {sum=b+c;
+            System.out.print(sum + ",");
+
+            b++;
+             c++;
+
+    }
+    }
 }
