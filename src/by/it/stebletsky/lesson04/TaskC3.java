@@ -23,6 +23,20 @@ package by.it.stebletsky.lesson04;
 десять умножить на десять равно сто
 */
 
-public class TaskC3 {
+import java.util.Scanner;
 
-}
+public class TaskC3 {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("введите число: ");
+        int k=sc.nextInt();
+        int sum=0,fact=1;
+        for (int i = 1; i <=k ; i++) {
+            sum+=i; fact*=i;
+        }
+        System.out.println("сумма "+ sum+ "\nфакториал "+ fact);
+    }
+
+    }
+
+
