@@ -21,5 +21,12 @@ b=[11, 22, 33, 44, 55, 66, 77, 88, 99, 0]
 */
 
 public class TaskB2 {
+    public static void main(String[] args) {
+        int bigSize = 20;
+        int smallSize = 10;
+        int[] bibArray = new int[bigSize];
+        int[] a = new int[smallSize];
+        int[] b = new int[smallSize];
 
+    }
 }
