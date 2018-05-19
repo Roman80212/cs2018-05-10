@@ -25,20 +25,23 @@ import java.util.Scanner;
 
 public class TaskB2 {
     public static void main(String[] args) {
-        int bigSize = 20;
-        int smallSize = 10;
-        int[] bibArray = new int[bigSize];
-        int[] a = new int[smallSize];
-        int[] b = new int[smallSize];
+        int[] bibArray = new int[20];
+        int[] a = new int[10];
+        int[] b = new int[10];
         Scanner sc = new Scanner(System.in);
         System.out.println("Введите 20 значений в массив: ");
-        for (int i = 0; i < bibArray.length ; i++) {
+        for (int i = 0; i < 20 ; i++) {
             int val = sc.nextInt();
-            if (i < bigSize/2)
-                a[i] = val;
-            else if (i >= bigSize/2)
-                b[i] = val;
+            bibArray [i] = val;
         }
+        for (int j = 0; j < 10; j++) {
+                a[j] = bibArray[j];
+
+        }
+        for (int j = 10, i = 0; j < 20; j++, i++) {
+                b[i] = bibArray[j];
+        }
+
         System.out.println("a=" + Arrays.toString(a));
         System.out.println("b=" + Arrays.toString(b));
     }
