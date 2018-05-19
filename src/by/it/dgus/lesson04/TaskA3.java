@@ -31,7 +31,8 @@ public class TaskA3 {
         int b=scan.nextInt();
         int c=scan.nextInt();
         if (a==b && b==c)
-            System.out.println("");
-        else if (a==b);
+            System.out.println(a +" "+b+" "+c);
+        else if (a==b)
+            System.out.println(a +" "+b);
 
-}}
+    }}
