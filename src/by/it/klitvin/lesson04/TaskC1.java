@@ -56,31 +56,53 @@ public class TaskC1 {
                               System.out.println("За месяц 0 начислено $0.0");
                           case 1:
                               System.out.println("За январь начислено" + " " + "$" + 1.5*a);
+                              if (1.5*a==666)
+                                  break;
 
                               case 2:
                               System.out.println("За февраль начислено" + " " + "$" + 1.5*a);
+                                  if (1.5*a==666)
+                                      break;
                           case 3:
                               System.out.println("За март начислено" + " " + "$" + 1.5*a);
+                              if (1.5*a==666)
+                                  break;
                           case 4:
                               System.out.println("За апрель начислено" + " " + "$" + 1.5*a);
+                              if (1.5*a==666)
+                                  break;
                           case 5:
                               System.out.println("За май начислено" + " " + "$" + 1.5*a);
+                              if (1.5*a==666)
+                                  break;
                           case 6:
                               System.out.println("За июнь начислено" + " " + "$" + a);
-                              if (1.5*a==666 || a ==666)
+                              if (a *1.0==666)
                                   break;
                           case 7:
                               System.out.println("За июль начислено" + " " + "$" + a);
+                              if (a *1.0==666)
+                                  break;
                           case 8:
                               System.out.println("За август начислено" + " " + "$" + a);
+                              if (a *1.0==666)
+                                  break;
                           case 9:
                               System.out.println("За сентябрь начислено" + " " + "$" + 1.5*a);
+                              if (1.5*a==666)
+                                  break;
                           case 10:
                               System.out.println("За октябрь начислено" + " " + "$" + 1.5*a);
+                              if (1.5*a==666)
+                                  break;
                           case 11:
                               System.out.println("За ноябрь начислено" + " " + "$" + 1.5*a);
+                              if (1.5*a==666)
+                                  break;
                           case 12:
                               System.out.println("За декабрь начислено" + " " + "$" + 1.5*a);
+                              if (1.5*a==666)
+                                  break;
                           case 13:
                               System.out.println("За месяц 13 начислено $0.0");
                           case 14:
