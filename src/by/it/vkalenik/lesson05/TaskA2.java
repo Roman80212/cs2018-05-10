@@ -30,7 +30,7 @@ public class TaskA2 {
         Scanner scan = new Scanner(System.in);
         while (true) {
             String value = scan.next();
-            if (value.equals("end")) ;
+            if (value.equals("END"))
             break;
             strings.add(value);
         }
