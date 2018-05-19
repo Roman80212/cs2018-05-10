@@ -37,7 +37,7 @@ public class TaskB3 {
         while (s <= a) {
             System.out.print(s + ", ");
             s = s+i;
-            i = i + 1;
+            i++;
 
 
 
