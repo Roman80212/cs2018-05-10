@@ -44,19 +44,6 @@ public class TaskB2 {
         }
 
 
-
-
-
-      /* while (i <= size){
-           int result = size * i;
-           System.out.println(result);
-           i++;
-
-
-
-       }*/
-
-
     }
 
 }
