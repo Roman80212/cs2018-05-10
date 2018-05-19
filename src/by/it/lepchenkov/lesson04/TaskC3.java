@@ -83,24 +83,33 @@ public class TaskC3 {
                 break;
             case 19:
                 numberN = "девятнадцать";
+                break;
             case 20:
-                numberN = "девятнадцать";
+                numberN = "двадцать";
+                break;
             case 30:
-                numberN = "девятнадцать";
+                numberN = "тридцать";
+                break;
             case 40:
-                numberN = "девятнадцать";
+                numberN = "сорок";
+                break;
             case 50:
-                numberN = "девятнадцать";
+                numberN = "пятьдесят";
+                break;
             case 60:
-                numberN = "девятнадцать";
+                numberN = "шестьдесят";
+                break;
             case 70:
-                numberN = "девятнадцать";
+                numberN = "семьдесят";
+                break;
             case 80:
-                numberN = "девятнадцать";
+                numberN = "восемьдесят";
+                break;
             case 90:
-                numberN = "девятнадцать";
+                numberN = "девяносто";
+                break;
             case 100:
-                numberN = "девятнадцать";
+                numberN = "сто";
                 break;
             default:
                 numberN = "такого вариант нет";
@@ -114,7 +123,22 @@ public class TaskC3 {
         while (j <= size) {
             int i = 2;
             while (i <= size) {
-                System.out.println(TaskC3.numberName(j) + " умножить на " + TaskC3.numberName(i) + " равно "+ j*i);
+                int composition = j*i;
+                String compositionStr;
+                /*String compositionStr = Integer.toString(composition);*/
+                String firstNumber = TaskC3.numberName(j);
+                String secondNumber = TaskC3.numberName(i);
+                if (composition <= 19 && composition >= 1){
+                    compositionStr=TaskC3.numberName(composition);}
+                if (composition % 10 == 0 && composition != 10){
+                    compositionStr=TaskC3.numberName(composition);}
+                    else {
+                    int firNumber = composition / 10;
+                    int secNumber = composition - (10*firNumber);
+                    compositionStr = TaskC3.numberName(firNumber) + TaskC3.numberName(secNumber);
+                }
+
+                System.out.println(firstNumber + " умножить на " + secondNumber + " равно "+ compositionStr);
                 i++;
             }
             j++;
