@@ -43,47 +43,64 @@ public class TaskC1 {
         System.out.println("какую вы хотите зарплату в $$$?");
         Scanner sc = new Scanner(System.in);
         int i = sc.nextInt();
-        double x=i, y=i*1.5;
+        double x = i, y = i * 1.5;
+
         if (i < 300 | i > 3000) {
             System.out.println("Мы вам перезвоним");
         } else {
             int j;
-            for (j = 0; j <= 14; j++) {{if (i==666 | j==666) {break;}}
-                switch (j) {
-                    case 0:
-                        System.out.println("За месяц 0 начислено $0,0"); break;
-                    case 1:
-                        System.out.println("За месяц январь начислено $" + y);break;
-                    case 2:
-                        System.out.println("За месяц февраль начислено $" +y);break;
-                    case 3:
-                        System.out.println("За месяц март начислено $" +y);break;
-                    case 4:
-                        System.out.println("За месяц апрель начислено $" +y);break;
-                    case 5:
-                        System.out.println("За месяц май начислено $" +y);break;
-                    case 6:
-                        System.out.println("За месяц июнь начислено $" +x);break;
-                    case 7:
-                        System.out.println("За месяц июль начислено $" +x);break;
-                    case 8:
-                        System.out.println("За месяц август начислено $" +x);break;
-                    case 9:
-                        System.out.println("За месяц сентябрь начислено $" +y);break;
-                    case 10:
-                        System.out.println("За месяц октябрь начислено $" +y);break;
-                    case 11:
-                        System.out.println("За месяц ноябрь начислено $" +y);break;
-                    case 12:
-                        System.out.println("За месяц декабрь начислено $" +y);break;
-                    case 13:
-                        System.out.println("За месяц 13 начислено $0,0");break;
-                    case 14:
-                        System.out.println("За месяц 14 начислено $0,0");
+            for (j = 0; j <= 14; j++) {
+                    switch (j) {
+                        case 0:
+                            System.out.println("За месяц 0 начислено $0,0");
+                            break;
+                        case 1:
+                            System.out.println("За месяц январь начислено $" + y);
+                            break;
+                        case 2:
+                            System.out.println("За месяц февраль начислено $" + y);
+                            break;
+                        case 3:
+                            System.out.println("За месяц март начислено $" + y);
+                            break;
+                        case 4:
+                            System.out.println("За месяц апрель начислено $" + y);
+                            break;
+                        case 5:
+                            System.out.println("За месяц май начислено $" + y);
+                            break;
+                        case 6:
+                            System.out.println("За месяц июнь начислено $" + x);
+                            break;
+                        case 7:
+                            System.out.println("За месяц июль начислено $" + x);
+                            break;
+                        case 8:
+                            System.out.println("За месяц август начислено $" + x);
+                            break;
+                        case 9:
+                            System.out.println("За месяц сентябрь начислено $" + y);
+                            break;
+                        case 10:
+                            System.out.println("За месяц октябрь начислено $" + y);
+                            break;
+                        case 11:
+                            System.out.println("За месяц ноябрь начислено $" + y);
+                            break;
+                        case 12:
+                            System.out.println("За месяц декабрь начислено $" + y);
+                            break;
+                        case 13:
+                            System.out.println("За месяц 13 начислено $0,0");
+                            break;
+                        case 14:
+                            System.out.println("За месяц 14 начислено $0,0");
 
+                    }
                 }
             }
+
         }
 
     }
-}
+

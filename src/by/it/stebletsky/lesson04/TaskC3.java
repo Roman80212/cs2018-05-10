@@ -27,14 +27,15 @@ import java.util.Scanner;
 
 public class TaskC3 {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        System.out.println("введите число: ");
-        int k=sc.nextInt();
-        int sum=0,fact=1;
-        for (int i = 1; i <=k ; i++) {
-            sum+=i; fact*=i;
-        }
-        System.out.println("сумма "+ sum+ "\nфакториал "+ fact);
+    // String один ="один";
+    // String два ="два";
+        //System.out.println();
+
+        //int x=15;
+        //String s="значение x=" +x;
+        //System.out.println(s);
+int x=15, y=17;
+
     }
 
     }
