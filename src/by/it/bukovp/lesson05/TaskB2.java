@@ -20,6 +20,9 @@ b=[11, 22, 33, 44, 55, 66, 77, 88, 99, 0]
 
 */
 
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class TaskB2 {
     public static void main(String[] args) {
         int bigSize = 20;
@@ -27,6 +30,16 @@ public class TaskB2 {
         int[] bibArray = new int[bigSize];
         int[] a = new int[smallSize];
         int[] b = new int[smallSize];
-
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Введите 20 значений в массив: ");
+        for (int i = 0; i < bibArray.length ; i++) {
+            int val = sc.nextInt();
+            if (i < bigSize/2)
+                a[i] = val;
+            else if (i >= bigSize/2)
+                b[i] = val;
+        }
+        System.out.println("a=" + Arrays.toString(a));
+        System.out.println("b=" + Arrays.toString(b));
     }
 }
