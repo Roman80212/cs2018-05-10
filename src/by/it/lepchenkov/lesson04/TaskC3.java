@@ -70,7 +70,7 @@ public class TaskC3 {
                 numberN = "четырнадцать";
                 break;
             case 15:
-                numberN = "пятадцать";
+                numberN = "пятнадцать";
                 break;
             case 16:
                 numberN = "шестнадцать";
@@ -117,28 +117,41 @@ public class TaskC3 {
         return numberN;
     }
 
+    static String compositionStrMethod (int x) {
+        int composition = x;
+        String compositionS = " ";
+        if (composition <= 19 && composition >= 1){
+            compositionS=TaskC3.numberName(composition);}
+        if (composition % 10 == 0 && composition != 10){
+            compositionS=TaskC3.numberName(composition);}
+            else{
+        int firNumber = composition / 10;
+        int secNumber = composition - (10*firNumber);
+        if (firNumber == 2 || firNumber == 3) {
+            compositionS = TaskC3.numberName(firNumber) +"дцать "+ TaskC3.numberName(secNumber);
+        }
+        if (firNumber >= 5 && firNumber <= 8) {
+            compositionS = TaskC3.numberName(firNumber) +"десят "+ TaskC3.numberName(secNumber);
+        }
+        if (firNumber == 4 || firNumber == 9) {
+            int firNumber10=firNumber*10;
+            compositionS = TaskC3.numberName(firNumber10) + " " + TaskC3.numberName(secNumber);
+        }}
+        return compositionS;
+    }
+
     public static void main(String[] args) {
+
         int size = 10;
         int j = 2;
         while (j <= size) {
             int i = 2;
             while (i <= size) {
                 int composition = j*i;
-                String compositionStr;
                 /*String compositionStr = Integer.toString(composition);*/
                 String firstNumber = TaskC3.numberName(j);
                 String secondNumber = TaskC3.numberName(i);
-                if (composition <= 19 && composition >= 1){
-                    compositionStr=TaskC3.numberName(composition);}
-                if (composition % 10 == 0 && composition != 10){
-                    compositionStr=TaskC3.numberName(composition);}
-                    else {
-                    int firNumber = composition / 10;
-                    int secNumber = composition - (10*firNumber);
-                    compositionStr = TaskC3.numberName(firNumber) + TaskC3.numberName(secNumber);
-                }
-
-                System.out.println(firstNumber + " умножить на " + secondNumber + " равно "+ compositionStr);
+                System.out.println(firstNumber + " умножить на " + secondNumber + " равно "+ TaskC3.compositionStrMethod(composition));
                 i++;
             }
             j++;
