@@ -25,7 +25,28 @@ package by.it.tkulesh.lesson04;
  */
 
 
+import java.util.Scanner;
 
 public class TaskB3 {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int a = scan.nextInt();
+        int s = 1;
+        int i = 2;
+
+        while (s <= a) {
+            System.out.print(s + ", ");
+            s = s+i;
+            i = i + 1;
+
+
+
+        }
+
+
+    }
+
+    ;
 
 }
+
