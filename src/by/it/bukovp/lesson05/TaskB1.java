@@ -17,11 +17,16 @@ public class TaskB1 {
     public static void main(String[] args) {
         ArrayList<String> list = new ArrayList<>();
         list.add("Строка 1");
-        list.add("Строка 2");
-        list.add("Строка 3");
-        list.add("Строка 4");
-        list.add("Строка 5");
-        System.out.println("Размер списка равен: " + list.size());
+        list.add("Строка 22");
+        list.add("Строка 333");
+        list.add("Строка 4444");
+        list.add("Строка 55555");
+//        Scanner sc = new Scanner(System.in);
+//        for (int i = 0; i < 5 ; i++) {
+//            String str = sc.next();
+//            list.add(str);
+//        }
+        System.out.println(list.size());
         for (int i = 0; i < list.size() ; i++) {
             System.out.println(list.get(i));
         }
