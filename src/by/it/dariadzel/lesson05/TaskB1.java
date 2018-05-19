@@ -10,6 +10,24 @@ package by.it.dariadzel.lesson05;
 */
 
 
+import java.util.ArrayList;
+
 public class TaskB1 {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<String>();
+        list.add("one");
+        list.add("two");
+        list.add("three");
+        list.add("four");
+        list.add("five");
+
+        int i = list.size();
+        System.out.println(i);
+
+        for (String s : list)
+        {
+            System.out.println(s);
+        }
+    }
 
 }

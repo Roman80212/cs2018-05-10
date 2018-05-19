@@ -103,3 +103,16 @@ public class TaskC3 {
     }
 
 }
+
+/*
+int i = 2
+ while (i <= 10) {
+            int j = 1;
+            while (j <= 10) {
+                System.out.print(a * b + " ");
+                b++;
+            }
+           a++;
+
+        }
+ */
