@@ -17,17 +17,57 @@ import java.util.Scanner;
 public class TaskC1 {
     public static void main(String[] args) throws Exception {
         ArrayList<Integer> list = new ArrayList<>();
+        ArrayList<Integer> three = new ArrayList<>();
+        ArrayList<Integer> two = new ArrayList<>();
+        ArrayList<Integer> other = new ArrayList<>();
         Scanner sc = new Scanner(System.in);
-        int i = 0;
-        for (i = list.size(); i < 20; i++) {
-            Integer value = sc.nextInt();
-
+        int x = 0;
+        for (int i = 0; i < 20; i++) {
+            x = sc.nextInt();
         }
-/*
-    private static void printList(List<Integer> list) {
-        for (Integer aList : list) System.out.println(aList);
+
+        for (x = 0; x < list.size(); x++) {
+
+            Integer k = list.get(x);
+            if  (k % 3 == 0 && k % 2 == 0){
+                three.add(x);
+                two.add(x);}
+            if (k % 3 == 0){
+                if(k % 2 != 0){
+                    three.add(x);}}
+            else
+            if (k % 2 == 0){
+                if(k % 3 != 0)
+                    two.add(x); }
+            else
+                other.add(x);
+
+
+
+
+         /*   if (x % 3 == 0 ) {
+
+                three.add(x);
+            } else if (x % 2 == 0) {
+                two.add(x);
+            } else {
+                other.add(x);
+            }*/
+        }
+
+        printList(three);
+        printList(two);
+        printList(other);
+
     }
 
-*/
+
+    private static void printList(List<Integer> list) {
+        for (Integer x : list) {
+            System.out.print(x);
+            System.out.println();
+        }
     }
+
+
 }
