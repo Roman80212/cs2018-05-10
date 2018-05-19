@@ -24,6 +24,22 @@ package by.it.dariadzel.lesson05;
 */
 
 
+import java.util.Scanner;
+
 public class TaskA1 {
+    public static void main(String[] args) {
+        int numbers [] = new int[10];
+         Scanner sc = new Scanner(System.in);
+        for (int i = numbers.length-1; i >=0; i--) {
+           numbers [i] = sc.nextInt();
+        }
+        for (int elements : numbers){
+            System.out.println(elements);
+        }
+
+
+
+
+    }
 
 }
