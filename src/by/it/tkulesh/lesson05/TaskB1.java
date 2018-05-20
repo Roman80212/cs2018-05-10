@@ -11,5 +11,14 @@ package by.it.tkulesh.lesson05;
 
 
 public class TaskB1 {
+    public static void main(String[] args) {
+        String [] lines={"one", "two", "three", "four", "five" };
+        System.out.println(lines.length);
+        for (String x : lines)
+        {System.out.print(x);
+            System.out.print("\n");}
 
-}
+    }
+    }
+
+

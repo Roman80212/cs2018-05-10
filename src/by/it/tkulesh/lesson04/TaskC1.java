@@ -93,16 +93,19 @@ public class TaskC1 {
                         break;
                     case 12:
                         System.out.println("За декабрь начислено $" + zp1);
+
                         break;
                     case 13:
                         System.out.println("За месяц 13 начислено $0.0");
                         break;
                     case 14:
                         System.out.println("За месяц 14 начислено $0.0");
+
                         break;
 
                 }
-if (zp1==666) break;
+
+                if (zp1==666) break;
                 if (zp==666) break;
             }
     }
