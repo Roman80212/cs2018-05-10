@@ -29,7 +29,7 @@ public class TaskB2 {
         int m[] = new int[20];
         int i;
         Scanner sc = new Scanner(System.in);
-        for (i = 0; i < 20; i++) {
+        for (i = 0; i < m.length; i++) {
             m[i] = sc.nextInt();
 
         }
@@ -39,14 +39,11 @@ public class TaskB2 {
 
         for (i = 0; i < m.length; i++) {
 
-            Integer v = m[i];
-            if (v < 10) {
-                for (int j = 0; j < 10; j++) {
-                    a[j] = m[i];
+            if (i < 10) {
+                 a[i] = m[i];
                 }
-            } else {
-                for (int k = 0; k < 10; k++) {
-                    b[k] = m[i];
+            else {
+                b[i] = m[i];
                 }
             }
 
@@ -56,7 +53,7 @@ public class TaskB2 {
 
         }
     }
-}
+
 
 
 

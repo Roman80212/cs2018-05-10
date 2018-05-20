@@ -20,27 +20,27 @@ public class TaskC1 {
         ArrayList<Integer> three = new ArrayList<>();
         ArrayList<Integer> two = new ArrayList<>();
         ArrayList<Integer> other = new ArrayList<>();
+        int i;
         Scanner sc = new Scanner(System.in);
-        int x = 0;
-        for (int i = 0; i < 20; i++) {
-            x = sc.nextInt();
+                for (i = 0; i < 20; i++) {
+            list.add(sc.nextInt());
         }
 
-        for (x = 0; x < list.size(); x++) {
+        for (i = 0; i < list.size(); i++) {
 
-            Integer k = list.get(x);
+            Integer k = list.get(i);
             if  (k % 3 == 0 && k % 2 == 0){
-                three.add(x);
-                two.add(x);}
+                three.add(k);
+                two.add(k);}
             if (k % 3 == 0){
                 if(k % 2 != 0){
-                    three.add(x);}}
+                    three.add(k);}}
             else
             if (k % 2 == 0){
                 if(k % 3 != 0)
-                    two.add(x); }
+                    two.add(k); }
             else
-                other.add(x);
+                other.add(k);
 
 
 
@@ -64,10 +64,9 @@ public class TaskC1 {
 
     private static void printList(List<Integer> list) {
         for (Integer x : list) {
-            System.out.print(x);
-            System.out.println();
-        }
-    }
+            System.out.println(x);
+                    }
+            }
 
 
 }
