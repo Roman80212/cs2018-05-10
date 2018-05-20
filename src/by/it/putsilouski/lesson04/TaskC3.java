@@ -68,7 +68,6 @@ public class TaskC3 {
                     return "восемнадцать";
                 case 19:
                     return "девятнадцать";
-
             }
         }
         if ((n % 10 == 0) && (n > 19)) {
@@ -92,7 +91,6 @@ public class TaskC3 {
                 case 100:
                     return "сто";
             }
-
         }
         int ost = (n%10);
         int des = n - ost;
@@ -100,7 +98,6 @@ public class TaskC3 {
 
         return St;
     }
-
     public static void main(String[] args) {
         for (int i = 2; i <= 10 ; i++) {
             for (int j = 2; j <= 10 ; j++) {
