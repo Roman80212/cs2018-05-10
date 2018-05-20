@@ -25,7 +25,7 @@ public class TaskB1 {
 
         System.out.println(list.size());
 
-        for (int i = 0; i < 5; i++)
+        for (int i = 0; i < list.size(); i++)
         {
             System.out.println(list.get(i));
         }
