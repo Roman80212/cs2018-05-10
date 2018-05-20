@@ -24,17 +24,19 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.Reader;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class TaskB2 {
     public static void main(String[] args) {
-        ArrayList<Integer> M=new ArrayList(20);
+        ArrayList<Integer> M=new ArrayList();
         Scanner scan=new Scanner(System.in);
         for (int i = 0; i <=19 ; i++) {
-            M.add(i=scan.nextInt());
+            int t=scan.nextInt();
+            M.add(t);
         }
-        ArrayList<Integer> a=new ArrayList(10);
-        ArrayList<Integer> b=new ArrayList(10);
+        ArrayList<Integer> a=new ArrayList();
+        ArrayList<Integer> b=new ArrayList();
         for (int i = 0; i < 10; i++) {
             int s = M.get(i);
             a.add(s);
@@ -42,8 +44,8 @@ public class TaskB2 {
         for (int i = 10; i < 20; i++) {
             int s = M.get(i);
             b.add(s);}
-        System.out.println(a);
-        System.out.println(b);
+            System.out.println("a="+a);
+                System.out.println("b="+b);
         }
     }
 
