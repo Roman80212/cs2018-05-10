@@ -26,6 +26,7 @@ public class TaskA2 {
     public static void main(String[] args) {
         ArrayList<String> strings = new ArrayList<>();
         Scanner scan = new Scanner(System.in);
+        System.out.println("Введите строки в список. Для выхода введите \"END\"");
         while (true) {
             String value = scan.next();
             if (value.equals("END"))
