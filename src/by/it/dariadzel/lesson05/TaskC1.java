@@ -41,18 +41,6 @@ public class TaskC1 {
                     two.add(k); }
             else
                 other.add(k);
-
-
-
-
-         /*   if (x % 3 == 0 ) {
-
-                three.add(x);
-            } else if (x % 2 == 0) {
-                two.add(x);
-            } else {
-                other.add(x);
-            }*/
         }
 
         printList(three);
