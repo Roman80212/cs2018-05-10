@@ -42,8 +42,8 @@ public class TaskB2 {
             if (i < 10) {
                  a[i] = m[i];
                 }
-            else if (i >= 10) {
-                b[i] = m[i];
+            else if (i < 19){
+                b[i-10] = m[i];
                 }
             }
 

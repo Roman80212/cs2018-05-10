@@ -94,7 +94,7 @@ public class TaskC3 {
     public static void main(String[] args) {
         for (int i = 2; i <=10; i++) {
             for (int j = 2; j <=10 ; j++) {
-                System.out.println(num(i)+ " умножить на " + num (j) + " равно " + num(i + j));
+                System.out.println(num(i)+ " умножить на " + num (j) + " равно " + num(i * j));
 
             }
 
@@ -104,15 +104,3 @@ public class TaskC3 {
 
 }
 
-/*
-int i = 2
- while (i <= 10) {
-            int j = 1;
-            while (j <= 10) {
-                System.out.print(a * b + " ");
-                b++;
-            }
-           a++;
-
-        }
- */

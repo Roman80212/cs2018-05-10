@@ -8,58 +8,64 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class TaskC2 {
-  /*  public static void main(String[] args) {
-        int array[] = new int[20];
+    public static void main(String[] args) {
+       /* int array[] = new int[20];
         int i;
         Scanner sc = new Scanner(System.in);
         for (i = 0; i < array.length; i++) {
             array[i] = sc.nextInt();
         }
-        ArrayList<Integer> arr = new ArrayList<>();
-        for (i = 0; i < array.length; i++) arr.add(array[i]);
 
-        System.out.println(sort(array));
+        for (int x: array) {
+            sort(array);
+            System.out.println(array);
+        }
+
     }
-    //Напишите тут ваш код
 
 
     public static void sort(ArrayList<Integer> array) {
+        ArrayList<Integer> arr = new ArrayList<>();
+        arr.add(array.get(0));
+        for (int i = 0; i < array.size(); i++) arr.add(array.get(i));
 
-        for (int i = 0; i < array.length; i++) {
 
-            int max = array[i];
+        for (int i = 0; i < array.size(); i++) {
+
+            int max = array.get(i);
             int imax = i;
 
-            for (int j = i + 1; j < array.length; j++) {
+            for (int j = i + 1; j < array.size(); j++) {
 
 
-                if (max < array[j]) {
-                    max = array[j];
+                if (max < array.get(j)) {
+                    max = array.get(j);
                     imax = j;
                 }
             }
 
 
             if (i != max) {
-                int temp = array[i];
-                array[i] = array[imax];
-                array[imax] = temp;
+                int temp = array.get(i);
+                array.set(i, array.get(imax));
+                array.set(imax, temp);
 
 
-
-       for (int i = 0; i < array.size() - 1; i++) {
-            for (int j = array.size() - 1; j >= i; j--) {
-                if (array[j - 1] > array[j]) {
-                    int t = array[j - 1];
-                    array[j - 1] = array[j];
-                    array[j] = t;
+                for (i = 0; i < array.size() - 1; i++) {
+                    for (int j = array.size() - 1; j >= i; j--) {
+                        if (array.get(j - 1) > array.get(j)) {
+                            int t = array.get(j - 1);
+                            array.set(j - 1, array.get(j));
+                            array.set(j, t);
+                        }
+                    }
                 }
-            }
-        }
 
+            }
+
+        }
+        for (int i = 0; i < array.length; i++) {
+            array[i] = arr.get(i);
+        }*/
     }
-
-            }
-        }
-    }*/
 }
