@@ -20,6 +20,35 @@ b=[11, 22, 33, 44, 55, 66, 77, 88, 99, 0]
 
 */
 
-public class TaskB2 {
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.Scanner;
 
+public class TaskB2 {
+    public static void main(String[] args) throws IOException {
+        int x = 0;
+        Scanner scan = new Scanner(System.in);
+        ArrayList<Integer> list = new ArrayList<Integer>();
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        while (x != 20) {
+            int s = scan.nextInt();
+            // if (s.isEmpty()) break;
+            list.add(s);
+            x++;
+        }
+        ArrayList<Integer> a = new ArrayList<Integer>();
+        ArrayList<Integer> b = new ArrayList<Integer>();
+        for (int i = 0; i < 10; i++) {
+            Integer c = list.get(i);
+            a.add(c);
+        }
+        for (int i = 10; i < 20; i++) {
+            Integer c = list.get(i);
+            b.add(c);
+        }
+        System.out.println("a=" + a.toString());
+        System.out.println("b=" + b.toString());
+    }
 }
