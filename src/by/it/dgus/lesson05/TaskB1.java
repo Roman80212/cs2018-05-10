@@ -11,7 +11,7 @@ package by.it.dgus.lesson05;
 
 
 import java.util.ArrayList;
-import java.util.Scanner;
+
 
 public class TaskB1 {
     public static void main(String[] args) {
