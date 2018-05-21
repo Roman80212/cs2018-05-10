@@ -4,15 +4,27 @@ package by.it.asidorkin.lesson05;
 Задача: Написать программу, которая вводит с клавиатуры 20 чисел и выводит их в убывающем порядке.
 */
 
-public class TaskC2 {
-    //Напишите тут ваш код
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Scanner;
 
+public class TaskC2{
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        ArrayList<Integer> list = new ArrayList();
+        int i = 0;
+        while (i < 20) {
+            int x = scan.nextInt();
+            list.add(x);
+            i++;
+        }
 
-
-
-
-    public static void sort(int[] array) {
-        //Напишите тут ваш код
+sort(list);
+    }
+    public static void sort(ArrayList<Integer> array) {
+Collections.sort(array);Collections.reverse(array);
+        for (Integer aList : array) System.out.println(aList);
     }
 
 }

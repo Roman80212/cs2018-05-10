@@ -10,16 +10,36 @@ package by.it.asidorkin.lesson05;
     Сначала тот, который для x%3, потом тот, который для x%2, потом последний.
 */
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class TaskC1 {
-    public static void main(String[] args) throws Exception
-    {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        ArrayList<Integer> list1  = new ArrayList();//делится на 3 (x%3==0)
+        ArrayList<Integer> list2  = new ArrayList();//Дделится на 2 (x%2==0)
+        ArrayList<Integer> list3  = new ArrayList();//Все, что не делятся на 2 и 3 (x%3!=0 & x%2!=0)
+        int i =0;
+            while (i<20){
+                int x=scan.nextInt();
+            if (x%3==0 & x%2==0) {
+                list1.add(x);
+                list2.add(x);
+            } else
+                if(x%3==0) list1.add(x); else
+                    if(x%2==0) list2.add(x); else
+                        list3.add(x);
+            i++;
+        }
 
-
+        printList(list1);
+        printList(list2);
+        printList(list3);
     }
 
     private static void printList(List<Integer> list) {
+
         for (Integer aList : list) System.out.println(aList);
     }
 

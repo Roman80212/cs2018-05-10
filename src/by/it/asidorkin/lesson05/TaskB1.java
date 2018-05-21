@@ -10,6 +10,25 @@ package by.it.asidorkin.lesson05;
 */
 
 
-public class TaskB1 {
+import java.util.ArrayList;
 
+
+public class TaskB1 {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList();
+        list.add("one");
+        list.add("two");
+        list.add("three");
+        list.add("four");
+        list.add("five");
+        System.out.println(list.size());
+
+    int i=0;
+    int j=list.size();
+    while (i<j){
+
+        System.out.println(list.get(i));  i++;
+
+    }
+    }
 }

@@ -20,6 +20,28 @@ b=[11, 22, 33, 44, 55, 66, 77, 88, 99, 0]
 
 */
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class TaskB2 {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int i =0;
+        ArrayList<Integer> m  = new ArrayList();
+        ArrayList<Integer> a  = new ArrayList();
+        ArrayList<Integer> b  = new ArrayList();
+        while (i<20){
+            int s=scan.nextInt();
+            m.add(s);i++; }i=0;
+            while(i<10){
+                a.add(m.get(i));i++;
+            }
+            while(i<20){
+                b.add(m.get(i));i++;
+            }
+        System.out.println("a="+a);
+        System.out.println("b="+b);
+    }
 
 }

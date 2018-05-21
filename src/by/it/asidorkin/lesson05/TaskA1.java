@@ -24,6 +24,17 @@ package by.it.asidorkin.lesson05;
 */
 
 
-public class TaskA1 {
+import java.util.Scanner;
 
+public class TaskA1 {
+    public static void main(String[] args){
+        int[] mass = new int[10];
+        Scanner scan = new Scanner(System.in);
+        for (int i = 0; i < mass.length; i++){
+            mass[i] = scan.nextInt();
+        }
+        for (int i = mass.length-1; i>=0; i--){
+            System.out.println(mass[i]);
+        }
+    }
 }
