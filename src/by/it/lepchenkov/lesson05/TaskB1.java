@@ -14,7 +14,7 @@ import java.util.Scanner;
 
 public class TaskB1 {
     public static void main(String[] args) {
-        ArrayList<String> strings = new ArrayList<>(5);
+        ArrayList<String> strings = new ArrayList<>();
         Scanner sc = new Scanner(System.in);
         int l;
         do {
