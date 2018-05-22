@@ -31,7 +31,7 @@ class TaskC1 {
     }
 
     public static double convertCelsiumToFahrenheit(int TC) {
-               double TF = (TC * 5 / 9 + 32 );
+               double TF = (TC -32)*5/9;
         return TF;
     }
 
