@@ -10,6 +10,23 @@ package by.it.tzhukova.lesson05;
 */
 
 
+import java.util.ArrayList;
+
 public class TaskB1 {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("String 1");
+        list.add("String 2");
+        list.add("String 3");
+        list.add("String 4");
+        list.add("String 5");
+
+        int i = list.size();
+        System.out.println(i);
+
+        for (String s : list) {
+            System.out.println(s);
+        }
+    }
 
 }
