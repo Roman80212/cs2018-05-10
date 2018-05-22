@@ -20,11 +20,15 @@ b=[11, 22, 33, 44, 55, 66, 77, 88, 99, 0]
 
 */
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class TaskB2 {
     public static void main(String[] args) {
+        int [] mas=new int [20];
+        Scanner sc=new Scanner(System.in);
+
+        int [] a = new int[10];
+        int [] b = new int[10];
 
     }
 }
