@@ -18,7 +18,6 @@ import java.util.Scanner;
 
 public class TaskC1 {
     public static void main(String[] args) throws Exception {
-        ArrayList a = new ArrayList();
         ArrayList onthree = new ArrayList();
         ArrayList ontwo = new ArrayList();
         ArrayList other = new ArrayList();
@@ -39,7 +38,6 @@ public class TaskC1 {
         printList(ontwo);
         printList(other);
     }
-
     private static void printList(List<Integer> list) {
         for (Integer aList : list) System.out.println(aList);
     }
