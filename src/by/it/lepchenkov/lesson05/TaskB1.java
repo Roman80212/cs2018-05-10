@@ -10,21 +10,19 @@ package by.it.lepchenkov.lesson05;
 */
 
 import java.util.ArrayList;
-import java.util.Scanner;
 
 public class TaskB1 {
     public static void main(String[] args) {
-        ArrayList<String> strings = new ArrayList<>();
-        Scanner sc = new Scanner(System.in);
-        int l;
+        ArrayList<Integer> ints = new ArrayList<>();
+        int l = 0;
         do {
-            String value = sc.next();
-            strings.add(value);
-            l = strings.size();
+            int value = l + 1;
+            ints.add(value);
+            l = ints.size();
         } while (l != 5);
-        System.out.println(strings.size());
+        System.out.println(ints.size());
         for (int i = 0; i < l; i++) {
-            System.out.println(strings.get(i));
+            System.out.println(ints.get(i));
         }
     }
 }
