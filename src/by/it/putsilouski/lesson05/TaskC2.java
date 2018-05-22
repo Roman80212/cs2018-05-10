@@ -18,8 +18,6 @@ public class TaskC2 {
         sort(a);
     }
     //Напишите тут ваш код
-
-
     public static void sort(int[] array) {
 
         int i = 0;
