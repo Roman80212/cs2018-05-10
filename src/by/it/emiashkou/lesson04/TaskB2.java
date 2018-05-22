@@ -31,9 +31,15 @@ public class TaskB2 {
         int j = scan.nextInt();
         int a=1;
         int b=1;
-        while (a<=j) {
-            System.out.println(a*b);
-            a++; b++;
+        while (a <= j){
+            System.out.print(a+" ");
+
+        while (b<=(j-1)) {
+            b++;
+            System.out.print(a * b + " ");
+        }
+            a++; b=1;
+            System.out.println(" ");
         }
 
     }
