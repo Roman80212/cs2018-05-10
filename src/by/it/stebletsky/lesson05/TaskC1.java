@@ -10,11 +10,16 @@ package by.it.stebletsky.lesson05;
     Сначала тот, который для x%3, потом тот, который для x%2, потом последний.
 */
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class TaskC1 {
 
-
-
-
 }
+
+
+
+
+
+

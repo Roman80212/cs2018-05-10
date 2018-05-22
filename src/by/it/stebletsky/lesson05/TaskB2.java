@@ -23,10 +23,26 @@ b=[11, 22, 33, 44, 55, 66, 77, 88, 99, 0]
 import java.util.Scanner;
 
 public class TaskB2 {
+    public static void main(String[] args) {
+        int m[] = new int[6];
+        int a[] = new int[3];
+        int b[] = new int[3];
 
-
-
-
-
-
+        Scanner sc = new Scanner(System.in);
+        for (int i = 0; i <= 5; i++) {
+            m[i] = sc.nextInt();
+            System.out.print(m[i] + " ");
         }
+
+        System.out.println();
+        System.out.print("a=[");
+        for (int i = 0; i < 3; i++) {
+            a[i] = m[i];
+            System.out.print(a[i] + " ");
+        }
+        System.out.print("]");
+
+
+
+    }
+}
