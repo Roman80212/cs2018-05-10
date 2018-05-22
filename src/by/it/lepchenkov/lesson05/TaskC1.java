@@ -56,5 +56,4 @@ public class TaskC1 {
         for (Integer aList : list) System.out.println(aList);
     }
 
-
 }

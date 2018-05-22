@@ -22,7 +22,7 @@ public class TaskB1 {
             strings.add(value);
             l = strings.size();
         } while (l != 5);
-        System.out.println(l);
+        System.out.println(strings.size());
         for (int i = 0; i < l; i++) {
             System.out.println(strings.get(i));
         }
