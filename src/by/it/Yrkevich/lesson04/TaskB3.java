@@ -20,12 +20,28 @@ package by.it.Yrkevich.lesson04;
 14
 Вывод:
 1,3,6,10,
-
-
  */
 
-
+import java.util.Scanner;
 
 public class TaskB3 {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int n = scan.nextInt();
+        int f = 1;
+        int i = 1;
+        while (f<= n) {
+            System.out.print( +f + ",");
+            i++;
+            f = (i * (i + 1)) / 2;
 
+
+
+
+
+
+        }
+
+
+    }
 }
