@@ -10,6 +10,24 @@ package by.it.putsilouski.lesson05;
 */
 
 
+import java.util.ArrayList;
+import java.util.Scanner;
+
 public class TaskB1 {
+    public static void main(String[] args) {
+        ArrayList list = new ArrayList();
+        for (int i = 0; i < 5; i++) {
+//            Scanner in = new Scanner(System.in);
+//            String data = in.nextLine();
+            list.add(i,i);
+        }
+        System.out.println(list.size());
+        for (int i = 0; i < 5 ; i++) {
+            System.out.println(list.get(i));
+
+
+        }
+
+    }
 
 }

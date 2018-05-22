@@ -109,14 +109,12 @@ public class TaskC1 {
                         month = 99;
                     }
                 }
-
             }
-
-
             } else {
             System.out.println("Мы вам перезвоним!");
         }
-    }}
+    }
+}
 
 
 

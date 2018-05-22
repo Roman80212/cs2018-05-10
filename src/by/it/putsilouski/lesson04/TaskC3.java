@@ -92,24 +92,22 @@ public class TaskC3 {
                     return "сто";
             }
         }
-        int ost = (n%10);
+        int ost = (n % 10);
         int des = n - ost;
-        St = digitaltostring(des)+" "+digitaltostring(ost);
-
+        St = digitaltostring(des) + " " + digitaltostring(ost);
         return St;
     }
     public static void main(String[] args) {
-        for (int i = 2; i <= 10 ; i++) {
-            for (int j = 2; j <= 10 ; j++) {
+        for (int i = 2; i <= 10; i++) {
+            for (int j = 2; j <= 10; j++) {
 //        int i = 6;
 //        int j = 4;
-                int ot = j*i;
+                int ot = j * i;
                 String si = digitaltostring(i);
                 String sj = digitaltostring(j);
                 String otv = digitaltostring(ot);
-                System.out.println(si+ " умножить на "+sj+" равно "+otv);
+                System.out.println(si + " умножить на " + sj + " равно " + otv);
             }
         }
     }
-
 }
