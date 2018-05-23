@@ -25,7 +25,21 @@ package by.it.bukovp.lesson04;
  */
 
 
+import java.util.Scanner;
 
 public class TaskB3 {
-
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Введите число: ");
+        int number = sc.nextInt();
+        int sum = 0;
+        int i = 1;
+        while (number > sum) {
+            sum = sum + i;
+            i++;
+            if (sum > number)
+                break;
+            System.out.print(sum + ",");
+        }
+    }
 }

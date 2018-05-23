@@ -1,6 +1,5 @@
 package by.it.tkulesh.lesson04;
 
-import sun.awt.geom.AreaOp;
 
 /*
 Выведите на экран в цикле 10 раз фразу

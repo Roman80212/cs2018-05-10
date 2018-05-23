@@ -46,7 +46,7 @@ public class TaskA2 {
             case 7 :
                 System.out.println("воскресенье");
                 default:
-                    System.out.println("такого дня недели не существуе");
+                    System.out.println("такого дня недели не существует");
         }
     }
 
