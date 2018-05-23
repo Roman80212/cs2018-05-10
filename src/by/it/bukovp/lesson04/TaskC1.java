@@ -1,5 +1,7 @@
 package by.it.bukovp.lesson04;
 
+import java.util.Scanner;
+
 /*
 Напишите программу которая спрашивает у пользователя:
 Какую вы хотите зарплату в $$$?
@@ -37,6 +39,43 @@ package by.it.bukovp.lesson04;
 
 */
 public class TaskC1 {
+    public static void main(String[] args) {
+        System.out.println("Какую вы хотите зарплату в $$$?");
+        Scanner scan = new Scanner(System.in);
+        double salary = scan.nextInt();
+        double zeroSalary = 0.0;
+        if (salary >= 300 && salary <= 3000 && salary != 666 && salary != 444){
+            System.out.println("За месяц 0 начислено $" + zeroSalary);
+            System.out.println("За январь начислено $" + salary*1.5);
+            System.out.println("За февраль начислено $" + salary*1.5);
+            System.out.println("За март начислено $" + salary*1.5);
+            System.out.println("За апрель начислено $" + salary*1.5);
+            System.out.println("За май начислено $" + salary*1.5);
+            System.out.println("За июнь начислено $" + salary);
+            System.out.println("За июль начислено $" + salary);
+            System.out.println("За август начислено $" + salary);
+            System.out.println("За сентябрь начислено $" + salary*1.5);
+            System.out.println("За октябрь начислено $" + salary*1.5);
+            System.out.println("За ноябрь начислено $" + salary*1.5);
+            System.out.println("За декабрь начислено $" + salary*1.5);
+            System.out.println("За месяц 13 начислено $" + zeroSalary);
+            System.out.println("За месяц 14 начислено $" + zeroSalary);
+        }
+        else if (salary < 300 || salary >3000 && salary != 666 && salary != 444)
+            System.out.println("Мы вам перезвоним!");
+        else if (salary == 666){
+            System.out.println("За месяц 0 начислено $" + zeroSalary);
+            System.out.println("За январь начислено $" + salary*1.5);
+            System.out.println("За февраль начислено $" + salary*1.5);
+            System.out.println("За март начислено $" + salary*1.5);
+            System.out.println("За апрель начислено $" + salary*1.5);
+            System.out.println("За май начислено $" + salary*1.5);
+            System.out.println("За июнь начислено $" + salary);
+        }
+        else if (salary == 444) {
+            System.out.println("За месяц 0 начислено $" + zeroSalary);
+            System.out.println("За январь начислено $" + salary*1.5);
+        }
 
-
+    }
 }

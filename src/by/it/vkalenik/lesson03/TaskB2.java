@@ -32,18 +32,14 @@ Lesson 03. Task B2. Нужно написать программу, котора
 
 */
 class TaskB2 {
-
-  /*  public static double dis(int a, int b, int c) {
-
+    public static void main(String[] args) {
+        System.out.println("Ввод: ");
         Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
-        int b = sc.nextInt();
-        int c = sc.nextInt();
+        int a = sc.nextInt(), b = sc.nextInt(), c = sc.nextInt();
         double dis = b * b - 4 * a * c;
-        if (dis > 0) {
-            double x1 = (-b - Math.sqrt(dis)) / (2 * a);
-            double x2 = (-b + Math.sqrt(dis)) / (2 * a);
-            System.out.println(x1 + " " + x2);
-        }
-    }*/
+        double x = -b / (2 * a), x1 = (-b + Math.sqrt(dis)) / (2 * a), x2 = (-b - Math.sqrt(dis)) / (2 * a);
+        if (dis > 0) System.out.println("Вывод:\n " + x1 + " " + x2);
+        if (dis == 0) System.out.println("Вывод: " + x);
+        if (dis < 0) System.out.println("Отрицательный дискриминант");
+    }
 }
