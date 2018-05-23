@@ -39,7 +39,7 @@ class TaskC3 {
         double rez = weight / ge * gm;
         int i = (int) (rez * 100);
         double delta = rez * 100 - i;
-        if (delta >= 0.5) ;
+        if (delta >= 0.5)
         i++;
         return i / 100.0;
     }
