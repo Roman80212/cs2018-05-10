@@ -25,7 +25,29 @@ package by.it.lepchenkov.lesson04;
  */
 
 
+import java.util.Scanner;
 
 public class TaskB3 {
+    static int sumNumberSequence(int x) {
+        int i = 1;
+        int sum = 0;
+        while (i <= x) {
+            sum = i + sum;
+            i++;
+        }
+        return sum;
+    }
 
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int number = sc.nextInt();
+        int j = 1;
+        while (TaskB3.sumNumberSequence(j) <= number) {
+            System.out.print(TaskB3.sumNumberSequence(j) + ",");
+            j++;
+        }
+    }
 }
+
+

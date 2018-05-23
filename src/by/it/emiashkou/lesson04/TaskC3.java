@@ -1,4 +1,4 @@
-package by.it.tkulesh.lesson04;
+package by.it.emiashkou.lesson04;
 
 /*
 Вывести таблицу умножения 10 x 10 (двоныйм циклом),

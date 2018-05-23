@@ -21,11 +21,21 @@ package by.it.stebletsky.lesson04;
 Вывод:
 1,3,6,10,
 
-
  */
 
-
+import java.util.Scanner;
 
 public class TaskB3 {
+    public static void main(String[] args) {
+        System.out.println("Введите число: ");
+        Scanner sc = new Scanner(System.in);
+        int i = sc.nextInt();
+        int x = 0, sum = 0;
+        while (sum+x < i) {
+            sum += x; x += 1; System.out.print(sum + ",");
+        }
 
+
+    }
 }
+

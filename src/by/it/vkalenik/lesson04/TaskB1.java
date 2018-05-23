@@ -30,19 +30,19 @@ import java.util.Scanner;
 public class TaskB1 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        int a = scan.nextInt();
-        int b = scan.nextInt();
-        int c = scan.nextInt();
-        if (a == b && b == c)
-            System.out.println(a + " " + b + " " + c);
-        else if (a == b)
-            System.out.println(a + " " + b);
-        else if (b == c)
-            System.out.println(b + " " + c);
-        else if (a == c)
-            System.out.println(a + " " + c);
+        int god = scan.nextInt();
+        if ((god % 4) == 0)
+        {
+            if (god < 400 && god != 100  && god != 200  && god != 300 )
+                System.out.println("количество дней в году: 366");
+            else
+            if ((god % 100) == 0 && (god % 400) == 0)
+                System.out.println("количество дней в году: 366");
+            else
+            if ((god % 100) == 0 && !((god % 400) == 0))
+                System.out.println("количество дней в году: 365");
+        }
+        else
+            System.out.println("количество дней в году: 365" );
     }
-
-}
-
 }
